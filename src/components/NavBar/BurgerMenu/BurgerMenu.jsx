@@ -22,12 +22,12 @@ const BurgerMenu = () => {
     setIsMenuClicked(!isMenuClicked);
   };
 
-  //   const closeMenu = () => {
-  //     setBurgerClass("bar unclicked");
-  //     setMenuClass("menu hidden");
-  //     document.body.style.overflow = "auto";
-  //     setIsMenuClicked(false);
-  //   };
+  // const closeMenu = () => {
+  //   setBurgerClass("bar unclicked");
+  //   setMenuClass("menu hidden");
+  //   document.body.style.overflow = "auto";
+  //   setIsMenuClicked(false);
+  // };
 
   return (
     <div className="nav-container">
