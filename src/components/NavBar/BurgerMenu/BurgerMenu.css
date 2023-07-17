@@ -16,6 +16,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 0;
+  position: static;
 }
 
 .logo {
@@ -46,11 +48,11 @@ nav {
 
 .menu {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
   left: 0;
-  z-index: 1;
+  z-index: 5;
 }
 
 .hidden {
@@ -92,6 +94,7 @@ nav {
   gap: 50px;
   margin-top: -30px;
   align-items: center;
+  height: 100%;
 }
 
 .nav-list {

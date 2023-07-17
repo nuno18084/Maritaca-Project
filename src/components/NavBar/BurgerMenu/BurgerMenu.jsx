@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./BurgerMenu.css";
 
 const BurgerMenu = () => {
@@ -13,21 +13,21 @@ const BurgerMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("bar clicked");
       setMenuClass("menu visible");
-      //   document.body.classList.add("no-scroll");
+      document.body.style.overflow = "hidden";
     } else {
       setBurgerClass("bar unclicked");
       setMenuClass("menu hidden");
-      //   document.body.classList.remove("no-scroll");
+      document.body.style.overflow = "auto";
     }
     setIsMenuClicked(!isMenuClicked);
   };
 
-  // const closeMenu = () => {
-  //   setBurgerClass("bar unclicked");
-  //   setMenuClass("menu hidden");
-  //   document.body.style.overflow = "auto";
-  //   setIsMenuClicked(false);
-  // };
+  const closeMenu = () => {
+    setBurgerClass("bar unclicked");
+    setMenuClass("menu hidden");
+    document.body.style.overflow = "auto";
+    setIsMenuClicked(false);
+  };
 
   return (
     <div className="nav-container">
@@ -43,27 +43,27 @@ const BurgerMenu = () => {
           <div className="nav-ul">
             <br />
             <br />
-            {/* <Link
+            <Link
               to="/"
               onClick={closeMenu}
               style={{ textDecoration: "none", color: "inherit" }}
-            > */}
-            <div className="nav-list">Home</div>
-            {/* </Link> */}
-            {/* <Link
+            >
+              <div className="nav-list">Home</div>
+            </Link>
+            <Link
               onClick={closeMenu}
-              to="/notable-winners"
+              to="/menu"
               style={{ textDecoration: "none", color: "inherit" }}
-            > */}
-            <div className="nav-list">Menu</div>
-            {/* </Link> */}
-            {/* <Link
+            >
+              <div className="nav-list">Menu</div>
+            </Link>
+            <Link
               onClick={closeMenu}
-              to="/about-us"
+              to="/promoções"
               style={{ textDecoration: "none", color: "inherit" }}
-            > */}
-            <div className="nav-list">Promoções</div>
-            {/* </Link> */}
+            >
+              <div className="nav-list">Promoções</div>
+            </Link>
             <div className="nav-list">Novidades</div>
             <div className="nav-list">Galeria</div>
             <div className="nav-list">Contactos</div>

@@ -16,7 +16,9 @@ const NavBar = () => {
           <li>Contactos</li>
         </ul>
       </div> */}
-      <BurgerMenu />
+      <div className="burger-menu-navbar">
+        <BurgerMenu />
+      </div>
     </div>
   );
 };
