@@ -17,8 +17,8 @@ function App() {
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/promoções" element={<PromotionPage />} />
         <Route path="/novidades" element={<NewsPage />} />
-        <Route path="/galeria" element={<GalleryPage />} />
         <Route path="/contactos" element={<ContactsPage />} />
+        <Route path="/galeria" element={<GalleryPage />} />
       </Routes>
       {/* <HomePage /> */}
     </div>

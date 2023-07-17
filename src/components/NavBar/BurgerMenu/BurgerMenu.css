@@ -1,3 +1,22 @@
+.nav-placeholder {
+  height: 5em; /* Adjust the height to match the height of your navbar */
+}
+
+.nav-container {
+  position: relative;
+  z-index: 9999;
+  transition: top 0.3s;
+}
+
+.nav-container.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black; /* Adjust the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the box shadow as needed */
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
