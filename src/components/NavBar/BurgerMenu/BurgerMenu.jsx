@@ -64,9 +64,27 @@ const BurgerMenu = () => {
             >
               <div className="nav-list">Promoções</div>
             </Link>
-            <div className="nav-list">Novidades</div>
-            <div className="nav-list">Galeria</div>
-            <div className="nav-list">Contactos</div>
+            <Link
+              onClick={closeMenu}
+              to="/novidades"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div className="nav-list">Novidades</div>
+            </Link>
+            <Link
+              onClick={closeMenu}
+              to="/galeria"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div className="nav-list">Galeria</div>
+            </Link>
+            <Link
+              onClick={closeMenu}
+              to="/contactos"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div className="nav-list">Contactos</div>
+            </Link>
           </div>
         </div>
       </div>
