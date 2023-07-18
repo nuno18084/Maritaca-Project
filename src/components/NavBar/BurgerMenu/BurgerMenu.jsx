@@ -58,7 +58,10 @@ const BurgerMenu = () => {
 
   return (
     <div className="nav-placeholder">
-      <div className="nav-container">
+      <div
+        className="nav-container"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
+      >
         <div>
           <nav>
             <div className="burger-menu" onClick={updateMenu}>
