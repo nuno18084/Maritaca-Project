@@ -1,0 +1,28 @@
+body {
+  background-color: white;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: black;
+  color: white;
+  line-height: 1.5;
+}
+
+.footer-main {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-main h2 {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}

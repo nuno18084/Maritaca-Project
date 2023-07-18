@@ -7,6 +7,8 @@ import PromotionPage from "./components/PromotionPage/PromotionPage";
 import NewsPage from "./components/NewsPage/NewsPage";
 import GalleryPage from "./components/GalleryPage/GalleryPage";
 import ContactsPage from "./components/ContactsPage/ContactsPage";
+import PrivacyPage from "./components/PrivacyPage/PrivacyPage";
+import TermsConditions from "./components/TermsConditions/TermsConditions";
 
 function App() {
   return (
@@ -19,8 +21,9 @@ function App() {
         <Route path="/novidades" element={<NewsPage />} />
         <Route path="/contactos" element={<ContactsPage />} />
         <Route path="/galeria" element={<GalleryPage />} />
+        <Route path="/privacidade" element={<PrivacyPage />} />
+        <Route path="/termos-condições" element={<TermsConditions />} />
       </Routes>
-      {/* <HomePage /> */}
     </div>
   );
 }
