@@ -49,6 +49,13 @@ const BurgerMenu = () => {
     };
   }, []);
 
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="nav-placeholder">
       <div className="nav-container">
@@ -66,41 +73,59 @@ const BurgerMenu = () => {
               <br />
               <Link
                 to="/"
-                onClick={closeMenu}
+                onClick={() => {
+                  closeMenu();
+                  handleLinkClick();
+                }}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <div className="nav-list">Home</div>
               </Link>
               <Link
-                onClick={closeMenu}
+                onClick={() => {
+                  closeMenu();
+                  handleLinkClick();
+                }}
                 to="/menu"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <div className="nav-list">Menu</div>
               </Link>
               <Link
-                onClick={closeMenu}
+                onClick={() => {
+                  closeMenu();
+                  handleLinkClick();
+                }}
                 to="/promoções"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <div className="nav-list">Promoções</div>
               </Link>
               <Link
-                onClick={closeMenu}
+                onClick={() => {
+                  closeMenu();
+                  handleLinkClick();
+                }}
                 to="/novidades"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <div className="nav-list">Novidades</div>
               </Link>
               <Link
-                onClick={closeMenu}
+                onClick={() => {
+                  closeMenu();
+                  handleLinkClick();
+                }}
                 to="/galeria"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <div className="nav-list">Galeria</div>
               </Link>
               <Link
-                onClick={closeMenu}
+                onClick={() => {
+                  closeMenu();
+                  handleLinkClick();
+                }}
                 to="/contactos"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
