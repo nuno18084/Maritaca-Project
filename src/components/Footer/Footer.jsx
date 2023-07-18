@@ -38,7 +38,9 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-main">
         <h2>Morada</h2>
-        <p onClick={handleAdress}>Rua do Patrocínio 44A</p>
+        <p onClick={handleAdress} style={{ cursor: "pointer" }}>
+          Rua do Patrocínio 44A
+        </p>
         <p>1350-230 Lisboa</p>
         <br />
         <p>3ª feira a Domingo: 12:00 - 15:00</p>
