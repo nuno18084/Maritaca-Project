@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { Carousel } from "react-bootstrap";
 import "./GalleryCard.css";
 import Delivery from "../../../Images/Delivery.jpg";
 import EntranceBig from "../../../Images/Entrance-big.jpg";
@@ -9,7 +11,7 @@ import Experiment from "../../../Images/Experiment.jpg";
 import PlateWine from "../../../Images/Plate-wine.jpg";
 import Room from "../../../Images/Room.jpg";
 import Tabuleiro from "../../../Images/Tabuleiro.jpg";
-import MaritacaLogo from "../../../Images/maritacaLogo.png";
+// import MaritacaLogo from "../../../Images/maritacaLogo.png";
 
 function GalleryCard() {
   return (

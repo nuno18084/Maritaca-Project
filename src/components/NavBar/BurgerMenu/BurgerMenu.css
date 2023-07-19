@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
+
 .nav-placeholder {
   height: 5em;
   background-color: rgba(0, 0, 0, 0.9);
@@ -123,9 +125,8 @@ nav {
 .nav-list {
   list-style-type: none;
   font-size: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding-bottom: 10px;
+  font-family: "Source Code Pro", monospace;
+  /* padding-bottom: 10px; */
 }
 .nav-bar-desktop {
   display: none;

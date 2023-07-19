@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import "../../App.css";
+
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
@@ -37,7 +39,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-main">
-        <h2>Morada</h2>
+        <h3>Morada</h3>
         <p onClick={handleAdress} style={{ cursor: "pointer" }}>
           Rua do Patrocínio 44A
         </p>
@@ -46,25 +48,27 @@ const Footer = () => {
         <p>3ª feira a Domingo: 12:00 - 15:00</p>
         <p>19:00 - 22:30</p>
         <br />
-        <h2>Contactos</h2>
-        <p>
-          <a
-            style={{ textDecoration: "none", color: "inherit" }}
-            href={`tel:${phoneNumber}`}
-          >
-            {phoneNumber}
-          </a>
-        </p>
-        <p>
-          <a
-            style={{ textDecoration: "none", color: "inherit" }}
-            href={`tel:${storeNumber}`}
-          >
-            {storeNumber}
-          </a>
-        </p>
+        <h3>Contactos</h3>
+        <div className="footer-numbers">
+          <p>
+            <a
+              style={{ textDecoration: "none", color: "inherit" }}
+              href={`tel:${phoneNumber}`}
+            >
+              {phoneNumber}
+            </a>
+          </p>
+          <p>
+            <a
+              style={{ textDecoration: "none", color: "inherit" }}
+              href={`tel:${storeNumber}`}
+            >
+              {storeNumber}
+            </a>
+          </p>
+        </div>
         <br />
-        <h2>Siga-nos</h2>
+        <h3>Siga-nos</h3>
         <div className="social-media">
           <div>
             <FaInstagram

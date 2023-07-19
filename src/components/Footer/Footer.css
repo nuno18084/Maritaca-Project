@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
+
 body {
   background-color: white;
+  font-family: "Source Code Pro", monospace;
 }
 
 .footer-container {
@@ -11,12 +14,32 @@ body {
 
 .footer-main {
   text-align: center;
-  margin: 0 auto;
   padding: 20px;
 }
 
-.footer-main h2 {
+.footer-main h3 {
   margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer-main p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.footer-main h5 {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.footer-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 0;
 }
 
 .social-media {

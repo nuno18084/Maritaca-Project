@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../Images/maritacaLogo.png";
 import "./HomePage.css";
 import { AiOutlineArrowDown } from "react-icons/ai";
+import "../../App.css";
 
 const HomePage = () => {
   return (

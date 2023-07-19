@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./BurgerMenu.css";
+import "../../../App.css";
 
 const BurgerMenu = () => {
   const [burgerClass, setBurgerClass] = useState("bar unclicked");
@@ -82,7 +83,7 @@ const BurgerMenu = () => {
                 }}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <div className="nav-list">Home</div>
+                <h1 className="nav-list">Home</h1>
               </Link>
               <Link
                 onClick={() => {
@@ -92,7 +93,7 @@ const BurgerMenu = () => {
                 to="/menu"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <div className="nav-list">Menu</div>
+                <h1 className="nav-list">Menu</h1>
               </Link>
               <Link
                 onClick={() => {
@@ -102,7 +103,7 @@ const BurgerMenu = () => {
                 to="/promoções"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <div className="nav-list">Promoções</div>
+                <h1 className="nav-list">Promoções</h1>
               </Link>
               <Link
                 onClick={() => {
@@ -112,7 +113,7 @@ const BurgerMenu = () => {
                 to="/novidades"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <div className="nav-list">Novidades</div>
+                <h1 className="nav-list">Novidades</h1>
               </Link>
               <Link
                 onClick={() => {
@@ -122,7 +123,7 @@ const BurgerMenu = () => {
                 to="/galeria"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <div className="nav-list">Galeria</div>
+                <h1 className="nav-list">Galeria</h1>
               </Link>
               <Link
                 onClick={() => {
@@ -132,7 +133,7 @@ const BurgerMenu = () => {
                 to="/contactos"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <div className="nav-list">Contactos</div>
+                <h1 className="nav-list">Contactos</h1>
               </Link>
             </div>
           </div>
