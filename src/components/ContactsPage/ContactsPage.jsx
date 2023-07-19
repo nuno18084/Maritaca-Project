@@ -25,7 +25,6 @@ const ContactsPage = () => {
             allowFullScreen=""
             style={{ border: "0" }}
             loading="lazy"
-            referrerPolicy="origin"
           ></iframe>
         </div>
         <div>

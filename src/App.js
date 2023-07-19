@@ -12,6 +12,8 @@ import PrivacyPage from "./components/PrivacyPage/PrivacyPage";
 import TermsConditions from "./components/TermsConditions/TermsConditions";
 
 function App() {
+  document.cookie = "cookieName=value; SameSite=Lax";
+
   return (
     <div>
       <NavBar />
