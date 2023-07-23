@@ -3,6 +3,7 @@
 import React from "react";
 import "./ContactsPage.css";
 import Footer from "../Footer/Footer";
+import "../../App.css";
 
 const ContactsPage = () => {
   const phoneNumber = 912625557;
@@ -13,7 +14,9 @@ const ContactsPage = () => {
       <div className="contacts-page">
         <div>
           <h1>Delivery</h1>
-          <p>Entregas num raio de 2 kms. Valor mínimo para entrega de 20€.</p>
+          <p className="contacts-page-p">
+            Entregas num raio de 2 kms. Valor mínimo para entrega de 20€.
+          </p>
         </div>
 
         <div className="map-section">
@@ -31,14 +34,17 @@ const ContactsPage = () => {
           <h1>Contactos</h1>
           <h2>Morada</h2>
           <p>Rua do Patrocínio 44A</p>
-          <p>1350-230 Lisboa</p>
-          <br />
-          <p>3ª feira a Domingo: 12:00 - 15:00</p>
-          <p>19:00 - 22:30</p>
+          <p className="contacts-page-p">1350-230 Lisboa</p>
+          {/* <br /> */}
+          <h2>Horario</h2>
+
+          <p className="contacts-page-p">
+            3ª feira a Domingo: 12:00 - 15:00 | 19:00 - 22:30
+          </p>
         </div>
         <div>
           <h2>Email</h2>
-          <p>geral@maritaca.pt</p>
+          <p className="contacts-page-p">geral@maritaca.pt</p>
         </div>
         <div>
           <h2>Telefone</h2>
@@ -47,15 +53,15 @@ const ContactsPage = () => {
               style={{ textDecoration: "none", color: "inherit" }}
               href={`tel:${phoneNumber}`}
             >
-              912 625 557
+              +351 912 625 557
             </a>
           </p>
-          <p>
+          <p className="contacts-page-p">
             <a
               style={{ textDecoration: "none", color: "inherit" }}
               href={`tel:${storeNumber}`}
             >
-              211 929 411
+              +351 211 929 411
             </a>
           </p>
         </div>

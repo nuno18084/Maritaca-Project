@@ -6,11 +6,22 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 import "../../App.css";
 
 const HomePage = () => {
+  const handleLinkClickMenu = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <div className="home-main">
         <img src={Logo} alt="logo" className="main-page-logo" />
-        <Link to="/menu" style={{ textDecoration: "none", color: "inherit" }}>
+        <Link
+          to="/menu"
+          onClick={handleLinkClickMenu}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
           <div className="bottom-section">
             <div>
               <h2 className="home-menu">Menu</h2>

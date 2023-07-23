@@ -7,8 +7,8 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
-  const phoneNumber = "912 625 557";
-  const storeNumber = "211 929 411";
+  const phoneNumber = "+351 912 625 557";
+  const storeNumber = "+351 211 929 411";
 
   const handleComplaints = () => {
     window.open("https://www.livroreclamacoes.pt/Inicio/", "_blank");
@@ -52,6 +52,7 @@ const Footer = () => {
         <div className="footer-numbers">
           <p>
             <a
+              className="footer-numbers-a"
               style={{ textDecoration: "none", color: "inherit" }}
               href={`tel:${phoneNumber}`}
             >
@@ -60,6 +61,7 @@ const Footer = () => {
           </p>
           <p>
             <a
+              className="footer-numbers-a"
               style={{ textDecoration: "none", color: "inherit" }}
               href={`tel:${storeNumber}`}
             >

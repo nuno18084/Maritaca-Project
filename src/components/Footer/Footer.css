@@ -26,6 +26,8 @@ body {
 .footer-main p {
   font-weight: 300;
   font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 5px;
 }
 
 .footer-main h5 {
