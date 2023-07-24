@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { debounce } from "lodash";
 import "./BurgerMenu.css";
 import "../../../App.css";
 
@@ -31,7 +32,7 @@ const BurgerMenu = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
+    const debouncedHandleScroll = debounce(() => {
       const navContainer = document.querySelector(".nav-container");
       if (navContainer) {
         const rect = navContainer.getBoundingClientRect();
@@ -41,12 +42,12 @@ const BurgerMenu = () => {
           navContainer.classList.remove("fixed");
         }
       }
-    };
+    }, 100);
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", debouncedHandleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
   }, []);
 
