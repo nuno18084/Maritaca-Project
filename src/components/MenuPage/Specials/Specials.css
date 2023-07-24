@@ -1,0 +1,45 @@
+.specials-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10%;
+}
+
+.specials-btn {
+  padding: 0.2em.5em;
+  border: 0.1em solid #ccc;
+  background-color: transparent;
+  border-radius: 10px;
+  color: gray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.specials-btn-active {
+  padding: 0.2em.5em;
+  border: 0.1em solid black;
+  /* background-color: rgba(243, 180, 49, 0.9); */
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.specials-pizzas {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
+.specials-rolinhos {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
+.specials-salads {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}

@@ -18,7 +18,7 @@
   width: 90%;
   margin: 10%;
   overflow: hidden;
-  border-radius: 10px; /* Add border-radius to the carousel containers */
+  border-radius: 10px;
 }
 
 .carousel-image {
@@ -26,23 +26,13 @@
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
-  /* Remove border-radius and overflow styles from carousel-image */
 }
 
 .carousel-card {
-  overflow: hidden; /* Hide any overflowing content */
+  overflow: hidden;
 }
 
 .image-wrapper {
-  border-radius: 10px; /* Adjust the value to your desired border radius */
-  overflow: hidden; /* Hide any overflowing content */
+  border-radius: 10px;
+  overflow: hidden;
 }
-
-/* .gallery-card-container {
-  padding-bottom: 20px;
-} */
-
-/* .carousel-container {
-  position: relative; 
-  z-index: 1; 
-} */

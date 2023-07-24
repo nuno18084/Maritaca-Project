@@ -8,11 +8,9 @@ const MenuPage = () => {
   return (
     <>
       <div className="menu-page">
-        <div className="menu-pic-section">
-          <div className="pizza-specialities">
-            <h1>Especialidades</h1>
-            <Menu />
-          </div>
+        <div className="pizza-specialities">
+          <h1>Especialidades</h1>
+          <Menu />
         </div>
       </div>
       <Footer />

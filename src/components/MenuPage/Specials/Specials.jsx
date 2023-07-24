@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-expressions */
 import React, { useState } from "react";
 import { pizzaData, rolinhoData, saladData } from "./SpecialsData";
+import "./Specials.css";
 
 function specialsMenu() {
   const [showPizza, setShowPizza] = useState(true);
@@ -35,55 +36,38 @@ function specialsMenu() {
     setShowRolinho(false);
   };
 
-  //   function toggleData() {
-  //     showPizza ? setShowRolinho(false) && setShowSalad(false) : setShowPizza;
-  //     showRolinho ? setShowPizza(false) && setShowSalad(false) : null;
-  //     showSalad ? setShowPizza(false) && setShowRolinho(false) : null;
-  //     if (showPizza) {
-  //       setShowPizza(true);
-  //       setShowRolinho(!showRolinho);
-  //       setShowSalad(!showSalad);
-  //     } else if (showRolinho) {
-  //       setShowRolinho(true);
-  //       setShowPizza(!showPizza);
-  //       setShowSalad(!showSalad);
-  //     } else if (showSalad) {
-  //       setShowSalad(true);
-  //       setShowPizza(!showPizza);
-  //       setShowRolinho(!showRolinho);
-  //     }
-  //   }
-
   return (
     <div className="menu-menu menu-page">
-      <button
-        onClick={() => {
-          //   toggleData();
-          togglePizza();
-        }}
-      >
-        {showPizza ? "Pizzas" : "Pizzas"}
-      </button>
-      <button
-        onClick={() => {
-          //   toggleData();
-          toggleRolinho();
-        }}
-      >
-        {showRolinho ? "Rolinhos" : "Rolinhos"}
-      </button>
-      <button
-        onClick={() => {
-          //   toggleData();
-          toggleSalad();
-        }}
-      >
-        {showSalad ? "Saladas" : "Saladas"}
-      </button>
+      <div className="specials-btn-container">
+        <button
+          className={`${showPizza ? "specials-btn-active" : "specials-btn"}`}
+          onClick={() => {
+            togglePizza();
+          }}
+        >
+          Pizzas
+        </button>
+        <button
+          className={`${showRolinho ? "specials-btn-active" : "specials-btn"}`}
+          onClick={() => {
+            toggleRolinho();
+          }}
+        >
+          Rolinhos
+        </button>
+        <button
+          className={`${showSalad ? "specials-btn-active" : "specials-btn"}`}
+          onClick={() => {
+            toggleSalad();
+          }}
+        >
+          Saladas
+        </button>
+      </div>
 
       {showPizza && numPizzas > 0 ? (
         <>
-          <ul className="pizzas">
+          <ul className="specials-pizzas">
             {pizzas.map((pizza) => (
               <Pizza pizzaObject={pizza} key={pizza.name} />
             ))}
@@ -93,7 +77,7 @@ function specialsMenu() {
 
       {showRolinho && numRolinhos > 0 ? (
         <>
-          <ul className="pizzas">
+          <ul className="specials-rolinhos">
             {rolinhos.map((rolinho) => (
               <Rolinho rolinhoObject={rolinho} key={rolinho.name} />
             ))}
@@ -103,7 +87,7 @@ function specialsMenu() {
 
       {showSalad && numSalads > 0 ? (
         <>
-          <ul className="pizzas">
+          <ul className="specials-salads">
             {salads.map((salad) => (
               <Salad saladObject={salad} key={salad.name} />
             ))}
