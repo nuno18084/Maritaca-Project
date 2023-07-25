@@ -18,10 +18,9 @@
 
 .specials-btn-active {
   padding: 0.2em.5em;
-  border: 0.1em solid black;
-  /* background-color: rgba(243, 180, 49, 0.9); */
-  background-color: black;
-  color: white;
+  border: 0.1em solid rgba(243, 180, 49, 0.9);
+  background-color: rgba(243, 180, 49, 0.9);
+  color: black;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
