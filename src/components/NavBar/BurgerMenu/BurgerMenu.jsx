@@ -75,7 +75,6 @@ const BurgerMenu = () => {
           <div className={menuClass}>
             <div className="nav-ul">
               <br />
-              <br />
               <Link
                 to="/"
                 onClick={() => {

@@ -1,10 +1,16 @@
 import React from "react";
 import "./PromotionPage.css";
 import Footer from "../Footer/Footer";
+import { motion } from "framer-motion";
 
 const PromotionPage = () => {
   return (
-    <div className="promotion-page">
+    <motion.div
+      className="promotion-page"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+    >
       <h1>Promoções</h1>
       <h1>Promoções</h1>
       <h1>Promoções</h1>
@@ -13,7 +19,7 @@ const PromotionPage = () => {
       <h1>Promoções</h1>
       <h1>Promoções</h1>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

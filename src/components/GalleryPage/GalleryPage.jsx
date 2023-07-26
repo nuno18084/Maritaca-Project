@@ -2,10 +2,16 @@ import React from "react";
 import "./GalleryPage.css";
 import Footer from "../Footer/Footer";
 import GalleryCard from "./GalleryCard/GalleryCard";
+import { motion } from "framer-motion";
 
 const GalleryPage = () => {
   return (
-    <div className="gallery-page">
+    <motion.div
+      className="gallery-page"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+    >
       <GalleryCard />
       {/* <h1>Galeria</h1>
       <h1>Galeria</h1>
@@ -14,7 +20,7 @@ const GalleryPage = () => {
       <h1>Galeria</h1>
       <h1>Galeria</h1> */}
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

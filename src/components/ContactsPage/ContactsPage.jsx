@@ -4,6 +4,7 @@ import React from "react";
 import "./ContactsPage.css";
 import Footer from "../Footer/Footer";
 import "../../App.css";
+import { motion } from "framer-motion";
 
 const ContactsPage = () => {
   const phoneNumber = 912625557;
@@ -11,7 +12,12 @@ const ContactsPage = () => {
 
   return (
     <>
-      <div className="contacts-page">
+      <motion.div
+        className="contacts-page"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      >
         <div>
           <h1>Delivery</h1>
           <p className="contacts-page-p">
@@ -65,7 +71,7 @@ const ContactsPage = () => {
             </a>
           </p>
         </div>
-      </div>
+      </motion.div>
       <Footer />
     </>
   );

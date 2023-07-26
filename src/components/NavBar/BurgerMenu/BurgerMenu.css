@@ -39,6 +39,7 @@ nav {
   padding: 25px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   align-items: center;
   z-index: 0;
   position: static;

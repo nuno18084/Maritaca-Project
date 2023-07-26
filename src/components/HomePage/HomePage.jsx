@@ -4,6 +4,7 @@ import Logo from "../../Images/maritacaLogo.png";
 import "./HomePage.css";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import "../../App.css";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   const handleLinkClickMenu = () => {
@@ -15,7 +16,12 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="home-main">
+      <motion.div
+        className="home-main"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      >
         <img src={Logo} alt="logo" className="main-page-logo" />
         <Link
           to="/menu"
@@ -31,7 +37,7 @@ const HomePage = () => {
             </div>
           </div>
         </Link>
-      </div>
+      </motion.div>
     </>
   );
 };
