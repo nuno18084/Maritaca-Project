@@ -16,6 +16,40 @@ body {
   padding-bottom: 10% 0;
 }
 
+.complete-menu-container {
+  background-color: white;
+  padding-top: 5%;
+  padding: 2%;
+}
+
+.complete-menu-container-h1 {
+  padding-bottom: 5%;
+}
+
+.fullscreen-image {
+  cursor: pointer;
+}
+
+.images-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10%;
+  padding-bottom: 15%;
+}
+
+/* Optional: You can hide the scrollbar when the image is in fullscreen */
+/* body:-webkit-full-screen {
+  overflow: hidden;
+} */
+/* body:-moz-full-screen {
+  overflow: hidden;
+} */
+/* body:fullscreen {
+  overflow: hidden;
+} */
+
 /* .menu-pic {
   position: absolute;
   margin-left: 100%;
