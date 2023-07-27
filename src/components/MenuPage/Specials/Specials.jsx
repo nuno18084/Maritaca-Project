@@ -1,0 +1,182 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable no-unused-expressions */
+import React, { useState } from "react";
+import { pizzaData, rolinhoData, saladData } from "./SpecialsData";
+import "./Specials.css";
+import PizzaImg from "../../../Images/MenuPic.png";
+
+function specialsMenu() {
+  const [showPizza, setShowPizza] = useState(true);
+  const [showRolinho, setShowRolinho] = useState(false);
+  const [showSalad, setShowSalad] = useState(false);
+
+  const pizzas = pizzaData;
+  const numPizzas = pizzas.length;
+
+  const rolinhos = rolinhoData;
+  const numRolinhos = rolinhos.length;
+
+  const salads = saladData;
+  const numSalads = salads.length;
+
+  const togglePizza = () => {
+    setShowPizza(true);
+    setShowRolinho(false);
+    setShowSalad(false);
+  };
+
+  const toggleRolinho = () => {
+    setShowRolinho(true);
+    setShowPizza(false);
+    setShowSalad(false);
+  };
+
+  const toggleSalad = () => {
+    setShowSalad(true);
+    setShowPizza(false);
+    setShowRolinho(false);
+  };
+
+  return (
+    <div className="menu-menu menu-page">
+      <div className="specials-btn-container">
+        <button
+          className={`${showPizza ? "specials-btn-active" : "specials-btn"}`}
+          onClick={() => {
+            togglePizza();
+          }}
+        >
+          Pizzas
+        </button>
+        <button
+          className={`${showRolinho ? "specials-btn-active" : "specials-btn"}`}
+          onClick={() => {
+            toggleRolinho();
+          }}
+        >
+          Rolinhos
+        </button>
+        <button
+          className={`${showSalad ? "specials-btn-active" : "specials-btn"}`}
+          onClick={() => {
+            toggleSalad();
+          }}
+        >
+          Saladas
+        </button>
+      </div>
+
+      {/* <ul
+        className="specials-list"
+        style={{
+          backgroundImage: showPizza
+            ? `url(${PizzaImg})`
+            : showRolinho
+            ? `url(${PizzaImg})`
+            : showSalad
+            ? `url(${PizzaImg})`
+            : "none",
+          backgroundSize: "cover",
+          margin: "0",
+          padding: "0",
+        }}
+      > */}
+      {/* <div
+        className="specials-pizzas"
+        style={{
+          background: showPizza ? `url(${PizzaImg})` : "none",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      > */}
+
+      <div
+      // className={`${
+      //   showPizza
+      //     ? "pizza-back-img"
+      //     : showRolinho
+      //     ? "rolinho-back-img"
+      //     : showSalad
+      //     ? "salad-back-img"
+      //     : "none"
+      // }`}
+      >
+        {showPizza && numPizzas > 0 ? (
+          <div className="specials-section">
+            <img src={PizzaImg} alt="pizza" className="map-image" />
+            <ul className="specials-pizzas">
+              {pizzas.map((pizza) => (
+                <Pizza pizzaObject={pizza} key={pizza.name} />
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {/* </div> */}
+
+        {showRolinho && numRolinhos > 0 ? (
+          <div className="specials-section">
+            <img src={PizzaImg} alt="pizza" className="map-image" />
+
+            <ul className="specials-rolinhos">
+              {rolinhos.map((rolinho) => (
+                <Rolinho rolinhoObject={rolinho} key={rolinho.name} />
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
+        {showSalad && numSalads > 0 ? (
+          <div className="specials-section">
+            <img src={PizzaImg} alt="pizza" className="map-image" />
+
+            <ul className="specials-salads">
+              {salads.map((salad) => (
+                <Salad saladObject={salad} key={salad.name} />
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {/* </ul> */}
+      </div>
+    </div>
+  );
+}
+
+// Em vez de passar props, passa-se {pizzaObject} para fazer destructuring
+function Pizza({ pizzaObject }) {
+  return (
+    <li className={`pizza ${pizzaObject.soldOut ? "sold-out" : ""}`}>
+      <div className="menu-page">
+        <h3>{pizzaObject.name}</h3>
+        <p>{pizzaObject.ingredients}</p>
+        <span>{pizzaObject.soldOut ? "SOLD OUT" : pizzaObject.price}€</span>
+      </div>
+    </li>
+  );
+}
+
+function Rolinho({ rolinhoObject }) {
+  return (
+    <li className={`pizza ${rolinhoObject.soldOut ? "sold-out" : ""}`}>
+      <div className="menu-page">
+        <h3>{rolinhoObject.name}</h3>
+        <p>{rolinhoObject.ingredients}</p>
+        <span>{rolinhoObject.soldOut ? "SOLD OUT" : rolinhoObject.price}€</span>
+      </div>
+    </li>
+  );
+}
+
+function Salad({ saladObject }) {
+  return (
+    <li className={`pizza ${saladObject.soldOut ? "sold-out" : ""}`}>
+      <div className="menu-page">
+        <h3>{saladObject.name}</h3>
+        <p>{saladObject.ingredients}</p>
+        <span>{saladObject.soldOut ? "SOLD OUT" : saladObject.price}€</span>
+      </div>
+    </li>
+  );
+}
+
+export default specialsMenu;

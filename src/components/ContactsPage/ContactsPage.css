@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
+.contacts-page {
+  background-color: white;
+  padding-bottom: 40px;
+  padding: 3%;
+}
+
+.contacts-page h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.map-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* margin: 3%; */
+}
+
+.contacts-page h2 {
+  margin-bottom: 10px;
+}
+
+.contacts-page p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+  margin: 2%;
+}
+
+.contacts-page-p {
+  padding-bottom: 20px;
+}
