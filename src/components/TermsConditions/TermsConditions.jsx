@@ -13,7 +13,6 @@ const TermsConditions = () => {
         <h1>Termos e Condições</h1>
         <div>
           <p>Bem-vindo(a) à Maritaca!</p>
-
           <h2>1. Introdução</h2>
           <p>
             Estes termos e condições regem o uso do nosso website. Ao acessar e
@@ -21,7 +20,6 @@ const TermsConditions = () => {
             condições. Se você não concorda com algum destes termos, por favor,
             não continue a utilizar o site.
           </p>
-
           <h2>2. Uso do Site</h2>
           <p>
             O uso deste site é permitido apenas para fins legítimos e de acordo
@@ -29,7 +27,6 @@ const TermsConditions = () => {
             possa causar danos ao site ou interferir no acesso de outras
             pessoas.
           </p>
-
           <h2>3. Propriedade Intelectual</h2>
           <p>
             Todos os conteúdos presentes no site, incluindo textos, gráficos,
@@ -37,22 +34,12 @@ const TermsConditions = () => {
             Maritaca ou de seus licenciadores e estão protegidos pelas leis de
             direitos autorais e propriedade intelectual aplicáveis.
           </p>
-
-          {/* <h2>4. Privacidade</h2>
-        <p>
-          Nós valorizamos a sua privacidade e tratamos seus dados pessoais de
-          acordo com a nossa Política de Privacidade. Ao utilizar este site,
-          você concorda com o processamento de seus dados conforme estabelecido
-          em nossa Política de Privacidade.
-        </p> */}
-
           <h2>5. Limitação de Responsabilidade</h2>
           <p>
             Não nos responsabilizamos por quaisquer danos diretos, indiretos,
             incidentais, consequenciais ou punitivos resultantes do uso deste
             site ou de qualquer conteúdo presente nele.
           </p>
-
           <h2>6. Alterações nos Termos</h2>
           <p>
             Podemos modificar estes termos e condições a qualquer momento,
@@ -61,14 +48,12 @@ const TermsConditions = () => {
             publicação de quaisquer alterações constituirá sua aceitação dessas
             mudanças.
           </p>
-
           <h2>7. Contacto</h2>
           <p>
             Se tiver alguma dúvida ou preocupação em relação a estes termos e
             condições, por favor, entre em contato conosco através do email:
             geral@maritaca.pt.
           </p>
-
           <p>
             Última atualização: {day}/{month}/{year}
           </p>
