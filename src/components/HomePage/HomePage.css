@@ -13,8 +13,7 @@ body {
 
 .home-main {
   background-color: black;
-  height: 70vh;
-  margin-top: 15px;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: space-between;

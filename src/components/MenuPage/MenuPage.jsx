@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const MenuImage = ({ imageURL }) => {
   const imageRef = useRef(null);
 
-  const handleImageClick1 = () => {
+  const handleImageClick = () => {
     if (imageURL === menuImages[0]) {
       window.open(
         "https://scontent.flis5-4.fna.fbcdn.net/v/t39.30808-6/345631410_262183662930763_8996491348591735034_n.png?_nc_cat=108&ccb=1-7&_nc_sid=c4c01c&_nc_ohc=ofFHhEq0PhoAX_elz07&_nc_ht=scontent.flis5-4.fna&oh=00_AfBdDrzIHLesuZF-KkOlew74a8IH0Pa3AYGaE6hVg21lWg&oe=64C5F19A",
@@ -28,8 +28,8 @@ const MenuImage = ({ imageURL }) => {
       src={imageURL}
       alt="menu-image"
       className="fullscreen-image"
-      onClick={handleImageClick1}
-      style={{ width: "25vw", height: "50%" }}
+      onClick={handleImageClick}
+      style={{ width: "40vw", height: "50%" }}
     />
   );
 };
@@ -40,7 +40,7 @@ const menuImages = [
 ];
 const MenuPage = () => {
   return (
-    <>
+    <div className="main-menu-page">
       <motion.div
         className="menu-page"
         initial={{ width: 0 }}
@@ -49,7 +49,9 @@ const MenuPage = () => {
       >
         <div className="pizza-specialities">
           <h1>Especialidades</h1>
-          <Menu />
+          <div>
+            <Menu />
+          </div>
         </div>
       </motion.div>
 
@@ -64,7 +66,7 @@ const MenuPage = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

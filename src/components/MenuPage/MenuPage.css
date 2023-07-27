@@ -4,12 +4,16 @@ body {
   font-family: "Source Code Pro", monospace;
   overflow-x: hidden !important;
   position: relative;
+  background-color: white !important;
 }
 
 .menu-page {
-  background-color: white;
-  padding: 2%;
+  padding-left: 2% !important;
 }
+
+/* .main-menu-page {
+  overflow-x: hidden !important;
+} */
 
 .pizza-specialities {
   padding-top: 5%;

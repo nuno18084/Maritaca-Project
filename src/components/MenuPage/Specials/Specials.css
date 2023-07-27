@@ -42,3 +42,38 @@
   text-align: left;
   padding: 0;
 }
+
+.specials-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.specials-section {
+  background-position: left;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+}
+
+.specials-section img {
+  background-position: left;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  transform: translate(35%, -5%);
+  position: relative;
+  opacity: 0.3;
+}
+
+.specials-pizzas,
+.specials-rolinhos,
+.specials-salads {
+  transform: translate(0, -125%);
+  padding-top: 0;
+}

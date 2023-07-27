@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { pizzaData, rolinhoData, saladData } from "./SpecialsData";
 import "./Specials.css";
+import PizzaImg from "../../../Images/MenuPic.png";
 
 function specialsMenu() {
   const [showPizza, setShowPizza] = useState(true);
@@ -65,35 +66,78 @@ function specialsMenu() {
         </button>
       </div>
 
-      {showPizza && numPizzas > 0 ? (
-        <>
-          <ul className="specials-pizzas">
-            {pizzas.map((pizza) => (
-              <Pizza pizzaObject={pizza} key={pizza.name} />
-            ))}
-          </ul>
-        </>
-      ) : null}
+      {/* <ul
+        className="specials-list"
+        style={{
+          backgroundImage: showPizza
+            ? `url(${PizzaImg})`
+            : showRolinho
+            ? `url(${PizzaImg})`
+            : showSalad
+            ? `url(${PizzaImg})`
+            : "none",
+          backgroundSize: "cover",
+          margin: "0",
+          padding: "0",
+        }}
+      > */}
+      {/* <div
+        className="specials-pizzas"
+        style={{
+          background: showPizza ? `url(${PizzaImg})` : "none",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      > */}
 
-      {showRolinho && numRolinhos > 0 ? (
-        <>
-          <ul className="specials-rolinhos">
-            {rolinhos.map((rolinho) => (
-              <Rolinho rolinhoObject={rolinho} key={rolinho.name} />
-            ))}
-          </ul>
-        </>
-      ) : null}
+      <div
+      // className={`${
+      //   showPizza
+      //     ? "pizza-back-img"
+      //     : showRolinho
+      //     ? "rolinho-back-img"
+      //     : showSalad
+      //     ? "salad-back-img"
+      //     : "none"
+      // }`}
+      >
+        {showPizza && numPizzas > 0 ? (
+          <div className="specials-section">
+            <img src={PizzaImg} alt="pizza" className="map-image" />
+            <ul className="specials-pizzas">
+              {pizzas.map((pizza) => (
+                <Pizza pizzaObject={pizza} key={pizza.name} />
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {/* </div> */}
 
-      {showSalad && numSalads > 0 ? (
-        <>
-          <ul className="specials-salads">
-            {salads.map((salad) => (
-              <Salad saladObject={salad} key={salad.name} />
-            ))}
-          </ul>
-        </>
-      ) : null}
+        {showRolinho && numRolinhos > 0 ? (
+          <div className="specials-section">
+            <img src={PizzaImg} alt="pizza" className="map-image" />
+
+            <ul className="specials-rolinhos">
+              {rolinhos.map((rolinho) => (
+                <Rolinho rolinhoObject={rolinho} key={rolinho.name} />
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
+        {showSalad && numSalads > 0 ? (
+          <div className="specials-section">
+            <img src={PizzaImg} alt="pizza" className="map-image" />
+
+            <ul className="specials-salads">
+              {salads.map((salad) => (
+                <Salad saladObject={salad} key={salad.name} />
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {/* </ul> */}
+      </div>
     </div>
   );
 }
@@ -105,7 +149,7 @@ function Pizza({ pizzaObject }) {
       <div className="menu-page">
         <h3>{pizzaObject.name}</h3>
         <p>{pizzaObject.ingredients}</p>
-        <span>{pizzaObject.soldOut ? "SOLD OUT" : pizzaObject.price}</span>
+        <span>{pizzaObject.soldOut ? "SOLD OUT" : pizzaObject.price}€</span>
       </div>
     </li>
   );
@@ -117,7 +161,7 @@ function Rolinho({ rolinhoObject }) {
       <div className="menu-page">
         <h3>{rolinhoObject.name}</h3>
         <p>{rolinhoObject.ingredients}</p>
-        <span>{rolinhoObject.soldOut ? "SOLD OUT" : rolinhoObject.price}</span>
+        <span>{rolinhoObject.soldOut ? "SOLD OUT" : rolinhoObject.price}€</span>
       </div>
     </li>
   );
@@ -129,7 +173,7 @@ function Salad({ saladObject }) {
       <div className="menu-page">
         <h3>{saladObject.name}</h3>
         <p>{saladObject.ingredients}</p>
-        <span>{saladObject.soldOut ? "SOLD OUT" : saladObject.price}</span>
+        <span>{saladObject.soldOut ? "SOLD OUT" : saladObject.price}€</span>
       </div>
     </li>
   );
