@@ -66,41 +66,7 @@ function specialsMenu() {
         </button>
       </div>
 
-      {/* <ul
-        className="specials-list"
-        style={{
-          backgroundImage: showPizza
-            ? `url(${PizzaImg})`
-            : showRolinho
-            ? `url(${PizzaImg})`
-            : showSalad
-            ? `url(${PizzaImg})`
-            : "none",
-          backgroundSize: "cover",
-          margin: "0",
-          padding: "0",
-        }}
-      > */}
-      {/* <div
-        className="specials-pizzas"
-        style={{
-          background: showPizza ? `url(${PizzaImg})` : "none",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      > */}
-
-      <div
-      // className={`${
-      //   showPizza
-      //     ? "pizza-back-img"
-      //     : showRolinho
-      //     ? "rolinho-back-img"
-      //     : showSalad
-      //     ? "salad-back-img"
-      //     : "none"
-      // }`}
-      >
+      <div>
         {showPizza && numPizzas > 0 ? (
           <div className="specials-section">
             <img src={PizzaImg} alt="pizza" className="map-image" />
@@ -111,7 +77,6 @@ function specialsMenu() {
             </ul>
           </div>
         ) : null}
-        {/* </div> */}
 
         {showRolinho && numRolinhos > 0 ? (
           <div className="specials-section">
@@ -136,7 +101,6 @@ function specialsMenu() {
             </ul>
           </div>
         ) : null}
-        {/* </ul> */}
       </div>
     </div>
   );
