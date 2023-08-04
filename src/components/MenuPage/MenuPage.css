@@ -43,6 +43,10 @@ body {
   padding-bottom: 15%;
 }
 
+.menu-image {
+  width: 40%;
+}
+
 /* Optional: You can hide the scrollbar when the image is in fullscreen */
 /* body:-webkit-full-screen {
   overflow: hidden;

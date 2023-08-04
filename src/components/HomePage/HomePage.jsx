@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Images/maritacaLogo.png";
 import "./HomePage.css";
-import { AiOutlineArrowDown } from "react-icons/ai";
 import "../../App.css";
 import { motion } from "framer-motion";
 
@@ -29,12 +28,7 @@ const HomePage = () => {
           style={{ textDecoration: "none", color: "inherit" }}
         >
           <div className="bottom-section">
-            <div>
-              <h2 className="home-menu">Menu</h2>
-            </div>
-            <div>
-              <AiOutlineArrowDown style={{ color: "#F3B431" }} size={35} />
-            </div>
+            <button className="home-menu">Menu</button>
           </div>
         </Link>
       </motion.div>
