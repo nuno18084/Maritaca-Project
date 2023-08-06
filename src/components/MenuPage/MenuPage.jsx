@@ -7,6 +7,22 @@ import { motion } from "framer-motion";
 import MenuPicture from "../../Images/Maritaca Menu.png";
 import MenuPicture2 from "../../Images/Maritaca Menu 2.png";
 
+function handleMenuClick1() {
+  window.open(
+    // "https://scontent.flis5-4.fna.fbcdn.net/v/t39.30808-6/345631410_262183662930763_8996491348591735034_n.png?_nc_cat=108&ccb=1-7&_nc_sid=c4c01c&_nc_ohc=ofFHhEq0PhoAX_elz07&_nc_ht=scontent.flis5-4.fna&oh=00_AfBdDrzIHLesuZF-KkOlew74a8IH0Pa3AYGaE6hVg21lWg&oe=64C5F19A",
+    "https://ibb.co/PQZ0NG3",
+    "_blank"
+  );
+}
+
+function handleMenuClick2() {
+  window.open(
+    // "https://scontent.flis5-3.fna.fbcdn.net/v/t39.30808-6/345648446_778148770694697_2207015203367209588_n.png?_nc_cat=104&ccb=1-7&_nc_sid=c4c01c&_nc_ohc=bCw5u3XuwBwAX9xOHKS&_nc_ht=scontent.flis5-3.fna&oh=00_AfAjsKxDPZ5SraCEcwnLHsOEPRmhceqt_7xHHdrLbYLUhw&oe=64C5FA28",
+    "https://ibb.co/xfyNr66",
+    "_blank"
+  );
+}
+
 // const MenuImage = () => {
 // const imageRef = useRef(null);
 // const handleImageClick = () => {
@@ -48,8 +64,18 @@ const MenuPage = () => {
       <div className="complete-menu-container pizza-specialities">
         <h1 className="complete-menu-container-h1">Menu Completo</h1>
         <div className="images-flex">
-          <img src={MenuPicture} alt="menu-image" className="menu-image" />
-          <img src={MenuPicture2} alt="menu-image" className="menu-image" />
+          <img
+            src={MenuPicture}
+            alt="menu-image"
+            className="menu-image"
+            onClick={handleMenuClick1}
+          />
+          <img
+            src={MenuPicture2}
+            alt="menu-image"
+            className="menu-image"
+            onClick={handleMenuClick2}
+          />
           {/* {menuImages.map((imageURL, index) => (
             <div key={index}>
               <MenuImage imageURL={imageURL} />

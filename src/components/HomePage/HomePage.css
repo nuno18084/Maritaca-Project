@@ -13,15 +13,14 @@ body {
 
 .home-main {
   background-color: black;
-  /* min-height: 100vh; */
-  height: calc(100vh - 5em);
+  /* max-height: 100%; */
+  height: calc(100vh - 10em);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   z-index: 1;
-  /* padding-bottom: 10%; */
-  /* overflow: hidden !important; */
+  overflow: hidden !important;
 }
 
 .main-page-logo {
@@ -29,23 +28,24 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  /* padding-top: 0; */
-  /* margin-top: 40px;
-  padding-bottom: 25%; */
 }
 
 .home-menu {
   color: #f3b431;
   background-color: transparent;
-  border: 0.5px solid #f3b431;
-  padding: 7% 100%;
+  border: 1px solid #f3b431;
+  padding: 10px 70px;
   border-radius: 10px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .bottom-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   z-index: 0;
 }
