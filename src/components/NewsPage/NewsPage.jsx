@@ -2,6 +2,7 @@ import React from "react";
 import "./NewsPage.css";
 import Footer from "../Footer/Footer";
 import { motion } from "framer-motion";
+import { newsData } from "../MenuPage/Specials/SpecialsData";
 
 const NewsPage = () => {
   return (
