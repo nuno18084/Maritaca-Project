@@ -1,8 +1,43 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { newsData } from "../MenuPage/Specials/SpecialsData";
 
 const News = () => {
-  return <div>News</div>;
+  const news = newsData;
+  const numNews = news.length;
+
+  return (
+    <motion.div
+      className="promotion-page"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+    >
+      <div>
+        {numNews > 0 ? (
+          <div>
+            <ul>
+              {news.map((newItem) => (
+                <NewItem newsObject={newItem} key={news.name} />
+              ))}
+            </ul>
+          </div>
+        ) : null}
+      </div>
+    </motion.div>
+  );
 };
+
+function NewItem({ newsObject }) {
+  return (
+    <li className={`pizza ${newsObject.soldOut ? "sold-out" : ""}`}>
+      <div className="menu-page">
+        <h3>{newsObject.name}</h3>
+        <p>{newsObject.ingredients}</p>
+        <span>{newsObject.soldOut ? "SOLD OUT" : newsObject.price}€</span>
+      </div>
+    </li>
+  );
+}
 
 export default News;
