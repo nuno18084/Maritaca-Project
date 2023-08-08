@@ -98,7 +98,7 @@ const Footer = () => {
               <>Política de Privacidade |</>{" "}
             </Link>{" "}
             <Link
-              to="/termos-condições"
+              to="/termos-condicoes"
               style={{ textDecoration: "none", color: "inherit" }}
               onClick={handleLinkClick}
             >

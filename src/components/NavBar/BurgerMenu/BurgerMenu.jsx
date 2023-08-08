@@ -100,7 +100,7 @@ const BurgerMenu = () => {
                   closeMenu();
                   handleLinkClick();
                 }}
-                to="/promoções"
+                to="/promocoes"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <h1 className="nav-list">Promoções</h1>

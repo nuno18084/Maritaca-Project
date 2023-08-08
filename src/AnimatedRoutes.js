@@ -18,12 +18,12 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<HomePage />} />
         <Route path="/menu" element={<MenuPage />} />
-        <Route path="/promoções" element={<PromotionPage />} />
+        <Route path="/promocoes" element={<PromotionPage />} />
         <Route path="/novidades" element={<NewsPage />} />
         <Route path="/contactos" element={<ContactsPage />} />
         <Route path="/galeria" element={<GalleryPage />} />
         <Route path="/privacidade" element={<PrivacyPage />} />
-        <Route path="/termos-condições" element={<TermsConditions />} />
+        <Route path="/termos-condicoes" element={<TermsConditions />} />
       </Routes>
     </AnimatePresence>
   );
