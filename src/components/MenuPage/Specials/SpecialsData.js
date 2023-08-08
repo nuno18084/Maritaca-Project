@@ -66,20 +66,20 @@ const saladData = [
 
 const promotionsData = [
   {
-    name: "Salada 1",
+    name: "Promoção 1",
     ingredients: "Bread with italian olive oil and rosemary",
     price: 6,
     // photoName: "pizzas/focaccia.jpg",
     soldOut: false,
   },
   {
-    name: "Salada 2",
+    name: "Promoção 2",
     ingredients: "Tomato and mozarella",
     price: 10,
     soldOut: false,
   },
   {
-    name: "Salada 3",
+    name: "Promoção 3",
     ingredients: "Tomato, mozarella, spinach, and ricotta cheese",
     price: 12,
     soldOut: false,
