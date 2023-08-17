@@ -43,7 +43,6 @@ const ContactsPage = () => {
           <h2>Morada</h2>
           <p>Rua do Patrocínio 44A</p>
           <p className="contacts-page-p">1350-230 Lisboa</p>
-          {/* <br /> */}
           <h2>Horario</h2>
 
           <p className="contacts-page-p">
