@@ -17,7 +17,7 @@ const Promotions = () => {
       <div>
         {numPromotions > 0 ? (
           <div>
-            <ul>
+            <ul className="promotions-list">
               {promotions.map((promotion) => (
                 <Promotion promotionObject={promotion} key={promotion.name} />
               ))}
@@ -31,7 +31,7 @@ const Promotions = () => {
 
 function Promotion({ promotionObject }) {
   return (
-    <li className={`pizza ${promotionObject.soldOut ? "sold-out" : ""}`}>
+    <li className="promotion-list-item">
       <div className="menu-page">
         <h3>{promotionObject.name}</h3>
         <p>{promotionObject.ingredients}</p>

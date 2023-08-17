@@ -74,6 +74,6 @@
 .specials-pizzas,
 .specials-rolinhos,
 .specials-salads {
-  transform: translate(0, -125%);
+  transform: translate(0, -135%);
   padding-top: 0;
 }
