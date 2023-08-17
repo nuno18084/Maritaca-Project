@@ -34,6 +34,8 @@ const ContactsPage = () => {
             allowFullScreen=""
             style={{ border: "0" }}
             loading="lazy"
+            samesite="None"
+            // Secure
           ></iframe>
         </div>
         <div>
