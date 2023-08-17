@@ -2,4 +2,25 @@
 
 .news-page {
   background-color: white;
+  color: black;
+}
+
+.news-page h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+.news-list-item {
+  list-style-type: none;
+}
+
+.news-list-item {
+  /* border-bottom: solid #e6e9ed 2px !important ; */
+  margin-top: 7%;
+}
+
+.news-list-item:last-of-type {
+  margin-bottom: 20%;
 }

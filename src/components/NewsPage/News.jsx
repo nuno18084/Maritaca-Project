@@ -16,9 +16,9 @@ const News = () => {
       <div>
         {numNews > 0 ? (
           <div>
-            <ul>
+            <ul className="news-list">
               {news.map((newItem) => (
-                <NewItem newsObject={newItem} key={news.name} />
+                <NewItem newsObject={newItem} key={newItem.name} />
               ))}
             </ul>
           </div>
@@ -30,7 +30,7 @@ const News = () => {
 
 function NewItem({ newsObject }) {
   return (
-    <li className={`pizza ${newsObject.soldOut ? "sold-out" : ""}`}>
+    <li className="news-list-item">
       <div className="menu-page">
         <h3>{newsObject.name}</h3>
         <p>{newsObject.ingredients}</p>
