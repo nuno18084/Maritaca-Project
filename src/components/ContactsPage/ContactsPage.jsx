@@ -34,8 +34,8 @@ const ContactsPage = () => {
             allowFullScreen=""
             style={{ border: "0" }}
             loading="lazy"
+            title="Google Map"
             samesite="None"
-            secure="true"
           ></iframe>
         </div>
         <div>
