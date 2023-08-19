@@ -11,16 +11,18 @@ body {
 }
 
 .main-menu-page {
-  /* padding-top: 30%; */
-  /* background: url(../../Images/MenuBackground.jpeg), cover no-repeat; */
   background-image: url(../../Images/MenuBackground.png);
-  /* background: rgba(75, 69, 57, 0.8); */
+  background-attachment: fixed !important; /* Make background img fixed */
+  background-repeat: repeat; /* Don't repeat the img */
+  background-size: auto auto; /* Cover the entire screen */
+  border: none;
+  outline: none;
 }
 
-.pizza-specialities {
-  /* padding-top: 5%;
-  padding-bottom: 10% 0; */
-}
+/* .pizza-specialities {
+  padding-top: 5%;
+  padding-bottom: 10% 0;
+} */
 
 .pizza-specialities-h1 {
   padding-top: 30%;

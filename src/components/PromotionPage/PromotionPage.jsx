@@ -8,13 +8,13 @@ const PromotionPage = () => {
   return (
     <>
       <motion.div
-        className="promotion-page"
+        className="main-promotion-page"
         initial={{ width: 0 }}
         animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
       >
         <div>
-          <h1>Promoções</h1>
+          <h1 className="promotions-h1">Promoções</h1>
           <div>
             <Promotions />
           </div>

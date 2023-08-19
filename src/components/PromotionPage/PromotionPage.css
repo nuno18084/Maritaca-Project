@@ -1,26 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
 
-.promotion-page {
-  background-color: white;
+.main-promotion-page {
+  padding-left: 2%;
+  padding-top: 30%;
+  background-image: url(../../Images/PromotionsBackground.png);
+  background-attachment: fixed !important; /* Make background img fixed */
+  background-repeat: repeat; /* Don't repeat the img */
+  background-size: auto auto; /* Cover the entire screen */
+  border: none;
+  outline: none;
   color: black;
-}
-
-.promotion-page h1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 8%;
-  margin-bottom: 10%;
 }
 
 .promotions-list {
   list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
 }
 
-.promotion-list-item {
-  /* border-bottom: solid #e6e9ed 2px !important ; */
-  margin-top: 7%;
-}
+/* .promotion-list-item {
+  border-bottom: solid #e6e9ed 2px !important ; 
+  margin-top: 7%; 
+} */
 
 .promotion-list-item:last-of-type {
-  margin-bottom: 20%;
+  padding-bottom: 20%;
+}
+
+.promotions-h1 {
+  /* padding-top: 30%; */
+  font-size: 32px;
+  color: #f3b431;
+  margin-bottom: 10%;
 }

@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
 
 .news-page {
-  background-color: white;
-  color: black;
+  background-color: #4b4539;
+  padding-left: 2%;
+
+  padding-top: 30%;
 }
 
-.news-page h1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 8%;
+.news-h1 {
+  font-size: 32px;
+  color: #f3b431;
   margin-bottom: 10%;
 }
 
@@ -18,9 +19,14 @@
 
 .news-list-item {
   /* border-bottom: solid #e6e9ed 2px !important ; */
-  margin-top: 7%;
+  /* margin-top: 7%; */
 }
 
 .news-list-item:last-of-type {
-  margin-bottom: 20%;
+  padding-bottom: 20%;
+}
+
+.news-list {
+  margin-bottom: 0;
+  padding-left: 2%;
 }

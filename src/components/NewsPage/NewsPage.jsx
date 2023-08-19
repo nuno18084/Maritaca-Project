@@ -14,7 +14,7 @@ const NewsPage = () => {
         exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
       >
         <div>
-          <h1>Novidades</h1>
+          <h1 className="news-h1">Novidades</h1>
           <div>
             <News />
           </div>
