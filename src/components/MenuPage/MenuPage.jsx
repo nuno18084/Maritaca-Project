@@ -46,46 +46,48 @@ function handleMenuClick2() {
 // ];
 const MenuPage = () => {
   return (
-    <div className="main-menu-page">
-      <motion.div
-        className="menu-page"
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
-      >
-        <div className="pizza-specialities">
-          <h1>Especialidades</h1>
-          <div>
-            <Menu />
-          </div>
-        </div>
-      </motion.div>
-
-      <div className="complete-menu-container pizza-specialities">
-        <h1 className="complete-menu-container-h1">Menu Completo</h1>
-        <div className="images-flex">
-          <img
-            src={MenuPicture}
-            alt="menu-image"
-            className="menu-image"
-            onClick={handleMenuClick1}
-          />
-          <img
-            src={MenuPicture2}
-            alt="menu-image"
-            className="menu-image"
-            onClick={handleMenuClick2}
-          />
-          {/* {menuImages.map((imageURL, index) => (
-            <div key={index}>
-              <MenuImage imageURL={imageURL} />
-              console.log(menuImages);
+    <>
+      <div className="main-menu-page">
+        <motion.div
+          className="menu-page"
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+        >
+          <div className="pizza-specialities">
+            <h1 className="pizza-specialities-h1">Especialidades</h1>
+            <div>
+              <Menu />
             </div>
-          ))} */}
+          </div>
+        </motion.div>
+
+        <div className="complete-menu-container pizza-specialities">
+          <h1 className="complete-menu-container-h1">Menu Completo</h1>
+          <div className="images-flex">
+            <img
+              src={MenuPicture}
+              alt="menu-image"
+              className="menu-image"
+              onClick={handleMenuClick1}
+            />
+            <img
+              src={MenuPicture2}
+              alt="menu-image"
+              className="menu-image"
+              onClick={handleMenuClick2}
+            />
+            {/* {menuImages.map((imageURL, index) => (
+      <div key={index}>
+        <MenuImage imageURL={imageURL} />
+        console.log(menuImages);
+      </div>
+    ))} */}
+          </div>
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

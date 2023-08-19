@@ -5,7 +5,7 @@ import BurgerMenu from "./BurgerMenu/BurgerMenu";
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="navbar-main-container">
       {/* <div className="navigation">
         <ul>
           <li>Home</li>
@@ -16,7 +16,7 @@ const NavBar = () => {
           <li>Contactos</li>
         </ul>
       </div> */}
-      <div className="burger-menu-navbar">
+      <div>
         <BurgerMenu />
       </div>
     </div>

@@ -28,7 +28,7 @@ const HomePage = () => {
           style={{ textDecoration: "none", color: "inherit" }}
         >
           <div className="bottom-section">
-            <button className="home-menu">Menu</button>
+            <button className="home-menu">Ver o Menu</button>
           </div>
         </Link>
       </motion.div>

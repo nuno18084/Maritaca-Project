@@ -6,37 +6,33 @@
   /* box-sizing: border-box; */
 }
 
-body {
-  background-color: black !important;
-  /* overflow-y: hidden; */
-}
-
 .home-main {
-  background-color: black;
+  /* background-color: black; */
   /* max-height: 100%; */
-  height: calc(100vh - 10em);
+  background-image: url(../../Images/backgroundImage.png);
+  background-position: center;
+  height: 100svh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10%;
   flex-direction: column;
   z-index: 1;
-  overflow: hidden !important;
+  overflow-y: hidden !important;
+  top: 0;
 }
 
 .main-page-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 70%;
 }
 
 .home-menu {
-  color: #f3b431;
+  color: white;
   background-color: transparent;
-  border: 1px solid #f3b431;
-  padding: 10px 70px;
-  border-radius: 10px;
-  width: 60%;
+  border-style: none;
   display: flex;
   align-items: center;
   justify-content: center;

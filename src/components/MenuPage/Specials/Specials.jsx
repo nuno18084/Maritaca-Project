@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { pizzaData, rolinhoData, saladData } from "./SpecialsData";
 import "./Specials.css";
-import PizzaImg from "../../../Images/MenuPic.png";
+// import PizzaImg from "../../../Images/MenuPic.png";
 
 function specialsMenu() {
   const [showPizza, setShowPizza] = useState(true);
@@ -69,7 +69,6 @@ function specialsMenu() {
       <div>
         {showPizza && numPizzas > 0 ? (
           <div className="specials-section">
-            <img src={PizzaImg} alt="pizza" className="map-image" />
             <ul className="specials-pizzas">
               {pizzas.map((pizza) => (
                 <Pizza pizzaObject={pizza} key={pizza.name} />
@@ -80,8 +79,6 @@ function specialsMenu() {
 
         {showRolinho && numRolinhos > 0 ? (
           <div className="specials-section">
-            <img src={PizzaImg} alt="pizza" className="map-image" />
-
             <ul className="specials-rolinhos">
               {rolinhos.map((rolinho) => (
                 <Rolinho rolinhoObject={rolinho} key={rolinho.name} />
@@ -92,8 +89,6 @@ function specialsMenu() {
 
         {showSalad && numSalads > 0 ? (
           <div className="specials-section">
-            <img src={PizzaImg} alt="pizza" className="map-image" />
-
             <ul className="specials-salads">
               {salads.map((salad) => (
                 <Salad saladObject={salad} key={salad.name} />

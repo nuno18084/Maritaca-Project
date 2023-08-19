@@ -7,7 +7,7 @@ body {
 
 .footer-container {
   width: 100%;
-  background-color: black;
+  background-color: rgba(75, 69, 57, 0.8);
   color: white;
   line-height: 1.5;
 }
