@@ -10,8 +10,10 @@
   /* background-color: black; */
   /* max-height: 100%; */
   background-image: url(../../Images/Backgrounds/HomeBackground.png);
-  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100svh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;

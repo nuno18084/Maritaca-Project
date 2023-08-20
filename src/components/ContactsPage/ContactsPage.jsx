@@ -1,21 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/style-prop-object */
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React from "react";
+import React, { useEffect } from "react";
 import "./ContactsPage.css";
 import Footer from "../Footer/Footer";
 import "../../App.css";
 import { motion } from "framer-motion";
+import Cookies from "js-cookie";
 
 const ContactsPage = () => {
   const phoneNumber = 912625557;
   const storeNumber = 211929411;
 
-  function setCookie() {
-    document.cookie = "myCookie=myValue; SameSite=None; Secure";
-  }
-
-  setCookie();
+  useEffect(() => {
+    // Set cookies with SameSite=None; Secure attributes
+    Cookies.set("myCookie", "myValue", { sameSite: "None", secure: true });
+  }, []);
 
   return (
     <>
@@ -41,8 +41,8 @@ const ContactsPage = () => {
             allowFullScreen=""
             style={{ border: "0" }}
             loading="lazy"
-            // title="Google Map"
-            // samesite="None"
+            title="Google Map"
+            samesite="None"
           ></iframe>
         </div>
         <div>
