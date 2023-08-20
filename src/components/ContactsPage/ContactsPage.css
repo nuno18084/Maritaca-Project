@@ -5,27 +5,53 @@ body {
 }
 
 .contacts-page {
-  background-color: white;
+  background-color: #4b4539;
+  padding-top: 30%;
   padding-bottom: 40px;
-  padding: 3%;
+  /* padding: 3%; */
 }
 
-.contacts-page h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  padding-top: 20px;
+.first-h1 {
+  margin-bottom: 30px;
+  padding-left: 2%;
+
+  font-size: 32px;
+  color: #f3b431;
 }
 
-.map-section {
+.second-h1 {
+  margin-bottom: 30px;
+  padding-left: 2%;
+  margin-top: 10%;
+  font-size: 32px;
+  color: #f3b431;
+}
+
+.third-h1 {
+  margin-bottom: 30px;
+  padding-left: 2%;
+  margin-top: 10%;
+  font-size: 32px;
+  color: #f3b431;
+}
+
+.contacts-page h2 {
+  color: #f3b431;
+  padding-left: 2%;
+  padding-bottom: 3%;
+}
+
+.contacts-page p {
+  color: white;
+}
+
+/* .map-section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 20px;
-  /* margin: 3%; */
-}
+} */
 
 .contacts-page h2 {
   margin-bottom: 10px;

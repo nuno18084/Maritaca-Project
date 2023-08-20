@@ -1,8 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
 
 .privacy-page {
-  background-color: white;
-  color: black;
-  height: 100%;
-  padding: 5% 2% 10% 2%;
+  background-color: #4b4539;
+  color: white;
+  padding: 30% 2% 10% 2%;
+}
+
+.privacy-page h1 {
+  font-size: 32px;
+  color: #f3b431;
+}
+
+.privacy-page h2 {
+  color: #f3b431;
+}
+
+.privacy-page p {
+  margin-bottom: 10%;
 }

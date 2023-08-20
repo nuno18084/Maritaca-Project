@@ -52,7 +52,7 @@ const TermsConditions = () => {
           <p>
             Se tiver alguma dúvida ou preocupação em relação a estes termos e
             condições, por favor, entre em contato conosco através do email:
-            geral@maritaca.pt.
+            quiosquemaritaca@gmail.com.
           </p>
           <p>
             Última atualização: {day}/{month}/{year}
