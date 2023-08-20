@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/style-prop-object */
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
@@ -9,6 +10,12 @@ import { motion } from "framer-motion";
 const ContactsPage = () => {
   const phoneNumber = 912625557;
   const storeNumber = 211929411;
+
+  function setCookie() {
+    document.cookie = "myCookie=myValue; SameSite=None; Secure";
+  }
+
+  setCookie();
 
   return (
     <>
@@ -34,8 +41,8 @@ const ContactsPage = () => {
             allowFullScreen=""
             style={{ border: "0" }}
             loading="lazy"
-            title="Google Map"
-            samesite="None"
+            // title="Google Map"
+            // samesite="None"
           ></iframe>
         </div>
         <div>
@@ -51,7 +58,12 @@ const ContactsPage = () => {
         </div>
         <div>
           <h2>Email</h2>
-          <p className="contacts-page-p">quiosquemaritaca@gmail.com</p>
+          <a
+            className="contacts-page-p"
+            href="mailto:quiosquemaritaca@gmail.com?subject=Feedback%20sobre%20a%20Maritaca!&body=Olá!%20Gostamos%20muito%20dos%20nossos%20clientes,%20por%20isso%20temos%20todo%20o%20gosto%20em%20receber%20sugestões%20e%20feedback.%20Obrigado!"
+          >
+            <p className="contacts-page-p">quiosquemaritaca@gmail.com</p>
+          </a>
         </div>
         <div>
           <h2>Telefone</h2>
