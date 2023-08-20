@@ -8,6 +8,10 @@ import "./GalleryCard.css";
 import Entrance from "../../../Images/Room/Entrance.jpg";
 import PlateWine from "../../../Images/Food/Plate-wine.jpg";
 import Room from "../../../Images/Room/Room.jpg";
+import RoomLamp1 from "../../../Images/Room/RoomLamp1.png";
+import RoomLamp2 from "../../../Images/Room/RoomLamp2.png";
+import RoomMushroom from "../../../Images/Room/RoomMushroom.png";
+import RoomTomato from "../../../Images/Room/RoomTomato.png";
 import EntranceDark from "../../../Images/Room/EntranceDark.jpeg";
 import Pasta from "../../../Images/Food/Pasta.png";
 import Soup from "../../../Images/Food/Soup.png";
@@ -43,6 +47,50 @@ function GalleryCard() {
               <div className="carousel-card">
                 <div className="image-wrapper">
                   <img className="carousel-image" src={Room} alt="PlateWine" />
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="carousel-card">
+                <div className="image-wrapper">
+                  <img
+                    className="carousel-image"
+                    src={RoomLamp1}
+                    alt="PlateWine"
+                  />
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="carousel-card">
+                <div className="image-wrapper">
+                  <img
+                    className="carousel-image"
+                    src={RoomLamp2}
+                    alt="PlateWine"
+                  />
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="carousel-card">
+                <div className="image-wrapper">
+                  <img
+                    className="carousel-image"
+                    src={RoomMushroom}
+                    alt="PlateWine"
+                  />
+                </div>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="carousel-card">
+                <div className="image-wrapper">
+                  <img
+                    className="carousel-image"
+                    src={RoomTomato}
+                    alt="PlateWine"
+                  />
                 </div>
               </div>
             </Carousel.Item>
@@ -94,14 +142,14 @@ function GalleryCard() {
           </Carousel>
         </div>
 
-        <div className="carousel-3">
+        {/* <div className="carousel-3">
           <h2 className="gallery-sub-title">O Nosso espaço</h2>
 
           <Carousel data-bs-theme="dark">
             <Carousel.Item>
               <img
                 className="carousel-image"
-                // src={Experiment}
+                src={Experiment}
                 alt="Experiment"
               />
             </Carousel.Item>
@@ -109,10 +157,10 @@ function GalleryCard() {
               <img className="carousel-image" src={Room} alt="Room" />
             </Carousel.Item>
             <Carousel.Item>
-              {/* <img className="carousel-image" src={Tabuleiro} alt="Tabuleiro" /> */}
+              <img className="carousel-image" src={Tabuleiro} alt="Tabuleiro" />
             </Carousel.Item>
           </Carousel>
-        </div>
+        </div> */}
 
         <div className="carousel-4">
           <h2 className="gallery-sub-title">Menções</h2>
@@ -127,7 +175,7 @@ function GalleryCard() {
             <Carousel.Item>
               <img
                 className="carousel-image"
-                // src={EntranceBig}
+                src={EntranceDark}
                 alt="EntranceBig"
               />
             </Carousel.Item>
