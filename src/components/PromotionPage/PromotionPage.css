@@ -4,6 +4,7 @@
   padding-left: 2%;
   padding-top: 30%;
   background-image: url(../../Images/PromotionsBackground.png);
+
   background-attachment: fixed !important; /* Make background img fixed */
   background-repeat: repeat; /* Don't repeat the img */
   background-size: auto auto; /* Cover the entire screen */

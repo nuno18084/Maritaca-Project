@@ -3,7 +3,13 @@
 .news-page {
   background-color: #4b4539;
   padding-left: 2%;
-
+  background-image: url(../../Images/NewsBackground.png);
+  background-attachment: fixed !important; /* Make background img fixed */
+  background-repeat: repeat; /* Don't repeat the img */
+  background-size: auto auto; /* Cover the entire screen */
+  border: none;
+  outline: none;
+  color: black;
   padding-top: 30%;
 }
 
@@ -17,10 +23,10 @@
   list-style-type: none;
 }
 
-.news-list-item {
-  /* border-bottom: solid #e6e9ed 2px !important ; */
-  /* margin-top: 7%; */
-}
+/* .news-list-item {
+  border-bottom: solid #e6e9ed 2px !important ; 
+  margin-top: 7%;
+} */
 
 .news-list-item:last-of-type {
   padding-bottom: 20%;
