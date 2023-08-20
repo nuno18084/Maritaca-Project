@@ -6,21 +6,17 @@ import { motion } from "framer-motion";
 
 const GalleryPage = () => {
   return (
-    <motion.div
-      className="gallery-page"
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
-    >
-      <GalleryCard />
-      {/* <h1>Galeria</h1>
-      <h1>Galeria</h1>
-      <h1>Galeria</h1>
-      <h1>Galeria</h1>
-      <h1>Galeria</h1>
-      <h1>Galeria</h1> */}
+    <>
+      <motion.div
+        className="gallery-page"
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+      >
+        <GalleryCard />
+      </motion.div>
       <Footer />
-    </motion.div>
+    </>
   );
 };
 

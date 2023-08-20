@@ -11,7 +11,7 @@ body {
 }
 
 .main-menu-page {
-  background-image: url(../../Images/MenuBackground.png);
+  background-image: url(../../Images/Backgrounds/MenuBackground.png);
   background-attachment: fixed !important; /* Make background img fixed */
   background-repeat: repeat; /* Don't repeat the img */
   background-size: auto auto; /* Cover the entire screen */

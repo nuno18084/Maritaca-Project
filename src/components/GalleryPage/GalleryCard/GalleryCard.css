@@ -1,3 +1,8 @@
+.galery-title-container {
+  font-size: 32px;
+  color: #f3b431;
+}
+
 .carousel-container {
   display: flex;
   justify-content: center;
@@ -6,26 +11,32 @@
   z-index: 1;
 }
 
-.galery-title-container {
-  margin-left: 15px;
-  padding-top: 20px;
+.galery-title-container h1 {
+  padding-left: 2%;
+  /* margin-left: 15px; */
+  /* padding-top: 20px; */
 }
 
 .carousel-1,
 .carousel-2,
 .carousel-3,
 .carousel-4 {
-  width: 90%;
+  width: 100%;
   margin: 10%;
   overflow: hidden;
-  border-radius: 10px;
+}
+
+.gallery-sub-title {
+  padding-left: 4%;
+  margin-bottom: 7%;
+  color: #f3b431;
+  font-size: 20px;
 }
 
 .carousel-image {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .carousel-card {
@@ -33,6 +44,5 @@
 }
 
 .image-wrapper {
-  border-radius: 10px;
   overflow: hidden;
 }

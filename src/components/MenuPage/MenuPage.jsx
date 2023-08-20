@@ -4,8 +4,8 @@ import "./MenuPage.css";
 import Menu from "./Specials/Specials";
 import Footer from "../Footer/Footer";
 import { motion } from "framer-motion";
-import MenuPicture from "../../Images/Maritaca Menu.png";
-import MenuPicture2 from "../../Images/Maritaca Menu 2.png";
+import MenuPicture from "../../Images/Other/Maritaca Menu.png";
+import MenuPicture2 from "../../Images/Other/Maritaca Menu 2.png";
 
 function handleMenuClick1() {
   window.open("https://ibb.co/PQZ0NG3", "_blank");

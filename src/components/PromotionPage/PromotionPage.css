@@ -3,7 +3,7 @@
 .main-promotion-page {
   padding-left: 2%;
   padding-top: 30%;
-  background-image: url(../../Images/PromotionsBackground.png);
+  background-image: url(../../Images/Backgrounds/PromotionsBackground.png);
 
   background-attachment: fixed !important; /* Make background img fixed */
   background-repeat: repeat; /* Don't repeat the img */

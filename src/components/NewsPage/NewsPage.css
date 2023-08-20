@@ -3,7 +3,7 @@
 .news-page {
   background-color: #4b4539;
   padding-left: 2%;
-  background-image: url(../../Images/NewsBackground.png);
+  background-image: url(../../Images/Backgrounds/NewsBackground.png);
   background-attachment: fixed !important; /* Make background img fixed */
   background-repeat: repeat; /* Don't repeat the img */
   background-size: auto auto; /* Cover the entire screen */

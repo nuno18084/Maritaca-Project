@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../Images/maritacaLogo.png";
+import Logo from "../../Images/Logos/maritacaLogo.png";
 import "./HomePage.css";
 import "../../App.css";
 import { motion } from "framer-motion";
