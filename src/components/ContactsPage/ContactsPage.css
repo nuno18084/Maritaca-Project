@@ -5,22 +5,21 @@ body {
 }
 
 .contacts-page {
-  background-color: #4b4539;
+  background-color: rgba(75, 69, 57, 0.9);
   padding-top: 30%;
   padding-bottom: 40px;
   /* padding: 3%; */
 }
 
 .first-h1 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-left: 2%;
-
   font-size: 32px;
   color: #f3b431;
 }
 
 .second-h1 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-left: 2%;
   margin-top: 10%;
   font-size: 32px;
@@ -28,7 +27,7 @@ body {
 }
 
 .third-h1 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-left: 2%;
   margin-top: 10%;
   font-size: 32px;
@@ -39,33 +38,38 @@ body {
   color: #f3b431;
   padding-left: 2%;
   padding-bottom: 3%;
+  font-size: 20px;
 }
 
-.contacts-page p {
-  color: white;
-}
-
-/* .map-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 20px;
+/* .contacts-page p {
 } */
 
 .contacts-page h2 {
   margin-bottom: 10px;
 }
 
-.contacts-page p {
+.contacts-page-p {
+  padding-bottom: 20px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+  margin: 2%;
+
+  color: white !important;
+}
+
+.contacts-page-p-delivery {
+  line-height: 1.5;
+}
+
+.contacts-page-p-first {
+  margin-bottom: 10px;
+  color: white !important;
   margin: 2%;
 }
 
-.contacts-page-p {
-  padding-bottom: 20px;
-  text-decoration: none;
+.contacts-page-a {
+  text-decoration: none !important;
 }

@@ -4,7 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Carousel } from "react-bootstrap";
 import "./GalleryCard.css";
-// import Delivery from "../../../Images/Other/Delivery.jpg";
+import Delivery from "../../../Images/Other/Delivery.jpg";
+import MediaRolinho from "../../../Images/Other/MediaRolinho.jpeg";
+import Review from "../../../Images/Other/Review.jpeg";
+import Timeout from "../../../Images/Other/Timeout.jpeg";
+import TimeoutMaritaca from "../../../Images/Other/TimeoutMaritaca.jpeg";
+import Wallpaper from "../../../Images/Other/Wallpaper.jpeg";
 import Entrance from "../../../Images/Room/Entrance.jpg";
 import PlateWine from "../../../Images/Food/Plate-wine.jpg";
 import Room from "../../../Images/Room/Room.jpg";
@@ -163,19 +168,36 @@ function GalleryCard() {
         </div> */}
 
         <div className="carousel-4">
-          <h2 className="gallery-sub-title">Menções</h2>
+          <h2 className="gallery-sub-title">Nos Media</h2>
 
           <Carousel data-bs-theme="dark">
             <Carousel.Item>
-              <img className="carousel-image" src={PlateWine} alt="PlateWine" />
+              <img className="carousel-image" src={Timeout} alt="PlateWine" />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="carousel-image" src={Entrance} alt="Entrance" />
+              <img className="carousel-image" src={Delivery} alt="PlateWine" />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="carousel-image"
-                src={EntranceDark}
+                src={TimeoutMaritaca}
+                alt="PlateWine"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="carousel-image" src={Review} alt="PlateWine" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="carousel-image"
+                src={MediaRolinho}
+                alt="Entrance"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="carousel-image"
+                src={Wallpaper}
                 alt="EntranceBig"
               />
             </Carousel.Item>

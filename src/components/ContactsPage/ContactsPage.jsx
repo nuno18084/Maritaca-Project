@@ -27,8 +27,9 @@ const ContactsPage = () => {
       >
         <div>
           <h1 className="first-h1">Delivery</h1>
-          <p className="contacts-page-p">
-            Entregas num raio de 2 kms. Valor mínimo para entrega de 20€.
+          <p className="contacts-page-p contacts-page-p-delivery">
+            Fazemos entregas dos nossos pratos num raio de 2 quilómetros. Valor
+            mínimo para entrega de 20€.
           </p>
         </div>
 
@@ -48,7 +49,7 @@ const ContactsPage = () => {
         <div>
           <h1 className="third-h1">Contactos</h1>
           <h2>Morada</h2>
-          <p>Rua do Patrocínio 44A</p>
+          <p className="contacts-page-p-first">Rua do Patrocínio 44A</p>
           <p className="contacts-page-p">1350-230 Lisboa</p>
           <h2>Horario</h2>
 
@@ -59,7 +60,7 @@ const ContactsPage = () => {
         <div>
           <h2>Email</h2>
           <a
-            className="contacts-page-p"
+            className="contacts-page-a"
             href="mailto:quiosquemaritaca@gmail.com?subject=Feedback%20sobre%20a%20Maritaca!&body=Olá!%20Gostamos%20muito%20dos%20nossos%20clientes,%20por%20isso%20temos%20todo%20o%20gosto%20em%20receber%20sugestões%20e%20feedback.%20Obrigado!"
           >
             <p className="contacts-page-p">quiosquemaritaca@gmail.com</p>
@@ -72,7 +73,7 @@ const ContactsPage = () => {
               style={{ textDecoration: "none", color: "inherit" }}
               href={`tel:${phoneNumber}`}
             >
-              +351 912 625 557
+              <p className="contacts-page-p-first">+351 912 625 557</p>
             </a>
           </p>
           <p className="contacts-page-p">

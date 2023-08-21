@@ -10,6 +10,7 @@ body {
   background-color: #4b4539;
   color: white;
   line-height: 1.5;
+  padding-top: 5%;
   background-image: url(../../Images/Backgrounds/FooterBackground.png);
   background-attachment: fixed !important; /* Make background img fixed */
   background-repeat: repeat; /* Don't repeat the img */

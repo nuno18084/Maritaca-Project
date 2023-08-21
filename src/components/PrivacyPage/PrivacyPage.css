@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
 
 .privacy-page {
-  background-color: #4b4539;
+  background-color: rgba(75, 69, 57, 0.9);
   color: white;
   padding: 30% 2% 10% 2%;
 }
