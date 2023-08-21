@@ -68,14 +68,12 @@ const ContactsPage = () => {
         </div>
         <div>
           <h2>Telefone</h2>
-          <p>
-            <a
-              style={{ textDecoration: "none", color: "inherit" }}
-              href={`tel:${phoneNumber}`}
-            >
-              <p className="contacts-page-p-first">+351 912 625 557</p>
-            </a>
-          </p>
+          <a
+            style={{ textDecoration: "none", color: "inherit" }}
+            href={`tel:${phoneNumber}`}
+          >
+            <p className="contacts-page-p-first">+351 912 625 557</p>
+          </a>
           <p className="contacts-page-p">
             <a
               style={{ textDecoration: "none", color: "inherit" }}
