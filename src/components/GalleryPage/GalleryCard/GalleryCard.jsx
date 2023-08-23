@@ -147,27 +147,7 @@ function GalleryCard() {
           </Carousel>
         </div>
 
-        {/* <div className="carousel-3">
-          <h2 className="gallery-sub-title">O Nosso espaço</h2>
-
-          <Carousel data-bs-theme="dark">
-            <Carousel.Item>
-              <img
-                className="carousel-image"
-                src={Experiment}
-                alt="Experiment"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousel-image" src={Room} alt="Room" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousel-image" src={Tabuleiro} alt="Tabuleiro" />
-            </Carousel.Item>
-          </Carousel>
-        </div> */}
-
-        <div className="carousel-4">
+        <div className="carousel-3">
           <h2 className="gallery-sub-title">Nos Media</h2>
 
           <Carousel data-bs-theme="dark">

@@ -19,3 +19,12 @@
 .terms-page p {
   margin-bottom: 10%;
 }
+
+@media only screen and (min-width: 700px) {
+  .terms-page {
+    padding: 15% 5% 10% 5%;
+  }
+  .terms-page p {
+    margin-bottom: 5%;
+  }
+}

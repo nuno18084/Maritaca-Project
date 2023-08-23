@@ -13,14 +13,11 @@
 
 .galery-title-container h1 {
   padding-left: 2%;
-  /* margin-left: 15px; */
-  /* padding-top: 20px; */
 }
 
 .carousel-1,
 .carousel-2,
-.carousel-3,
-.carousel-4 {
+.carousel-3 {
   width: 100%;
   margin: 15%;
   overflow: hidden;
@@ -45,4 +42,18 @@
 
 .image-wrapper {
   overflow: hidden;
+}
+
+@media only screen and (min-width: 700px) {
+  .gallery-sub-title {
+    margin-bottom: 5%;
+  }
+  .carousel-image {
+    height: 80vh;
+  }
+  .carousel-1,
+  .carousel-2,
+  .carousel-3 {
+    margin: 5%;
+  }
 }

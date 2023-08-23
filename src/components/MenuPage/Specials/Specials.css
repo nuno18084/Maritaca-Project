@@ -56,36 +56,30 @@ span {
   color: white;
 }
 
-/* 
-.specials-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+@media only screen and (min-width: 700px) {
+  .specials-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-.specials-section {
-  background-position: left;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-  height: 500px;
-  width: 100%;
-}
+  .specials-btn {
+    padding: 0.6em 2.4em;
+    border: 0.1em solid #ccc;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 
-.specials-section img {
-  background-position: left;
-  background-repeat: no-repeat;
-  transform: translate(35%, -5%);
-  position: relative;
-  opacity: 0.3;
+  .specials-btn-active {
+    padding: 0.8em 2.6em;
+    border: 0.1em solid black;
+    background-color: rgba(243, 180, 49, 0.9);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 }
-
-.specials-pizzas,
-.specials-rolinhos,
-.specials-salads {
-  transform: translate(0, -135%);
-  padding-top: 0;
-} */

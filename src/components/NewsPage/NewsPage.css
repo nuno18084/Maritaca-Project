@@ -36,3 +36,22 @@
   margin-bottom: 0;
   padding-left: 2%;
 }
+
+@media only screen and (min-width: 700px) {
+  .news-page {
+    background-color: #4b4539;
+    background-image: url(../../Images/Backgrounds/NewsBackgroundBig.png);
+    background-attachment: fixed !important; /* Make background img fixed */
+    background-repeat: repeat; /* Don't repeat the img */
+    background-size: auto auto; /* Cover the entire screen */
+    border: none;
+    outline: none;
+    color: black;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .news-list-item:last-of-type {
+    padding-bottom: 10%;
+  }
+}

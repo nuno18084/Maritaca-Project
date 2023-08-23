@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import "../../App.css";
-
+import MaritacaLogo from "../../Images/Logos/maritacaLogo.png";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
@@ -39,17 +39,31 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-main">
-        <h3>Morada</h3>
-        <p onClick={handleAdress} style={{ cursor: "pointer" }}>
-          Rua do Patrocínio 44A
-        </p>
-        <p>1350-230 Lisboa</p>
+        <div className="footer-main-logo">
+          <Link
+            to="/"
+            onClick={handleLinkClick}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <img src={MaritacaLogo} alt="footer-logo" className="footer-logo" />
+          </Link>
+        </div>
+        <div className="footer-main-address">
+          <h3>Morada</h3>
+          <p onClick={handleAdress} style={{ cursor: "pointer" }}>
+            Rua do Patrocínio 44A
+          </p>
+          <p>1350-230 Lisboa</p>
+        </div>
         <br />
-        <p>3ª feira a Domingo: 12:00 - 15:00</p>
-        <p>19:00 - 22:30</p>
+        <div className="footer-main-schedule">
+          <h3>Horario</h3>
+          <p>3ª feira a Domingo: 12:00 - 15:00</p>
+          <p>19:00 - 22:30</p>
+        </div>
         <br />
-        <h3>Contactos</h3>
         <div className="footer-numbers">
+          <h3>Contactos</h3>
           <p>
             <a
               className="footer-numbers-a"
@@ -70,45 +84,56 @@ const Footer = () => {
           </p>
         </div>
         <br />
-        <h3>Siga-nos</h3>
         <div className="social-media">
-          <div>
-            <FaInstagram
-              size={25}
-              onClick={handleInstagram}
-              style={{ cursor: "pointer" }}
-            />
-          </div>
-          <div>
-            <FaFacebookF
-              size={25}
-              onClick={handleFacebook}
-              style={{ cursor: "pointer" }}
-            />
+          <h3>Siga-nos</h3>
+          <div className="social-media-icons">
+            <div>
+              <FaInstagram
+                size={25}
+                onClick={handleInstagram}
+                style={{ cursor: "pointer" }}
+              />
+            </div>
+            <div>
+              <FaFacebookF
+                size={25}
+                onClick={handleFacebook}
+                style={{ cursor: "pointer" }}
+              />
+            </div>
           </div>
         </div>
         <br />
-        <div>
-          <h5>
-            <Link
-              to="/privacidade"
-              style={{ textDecoration: "none", color: "inherit" }}
-              onClick={handleLinkClick}
-            >
-              <>Política de Privacidade |</>{" "}
-            </Link>{" "}
-            <Link
-              to="/termos-condicoes"
-              style={{ textDecoration: "none", color: "inherit" }}
-              onClick={handleLinkClick}
-            >
-              <>Termos e Condições |</>{" "}
-            </Link>{" "}
-            <br />{" "}
-            <div onClick={handleComplaints} style={{ cursor: "pointer" }}>
-              Livro de reclamações
-            </div>
-          </h5>
+        <div className="footer-privacy">
+          <div>
+            <h5>
+              <Link
+                to="/privacidade"
+                style={{ textDecoration: "none", color: "inherit" }}
+                onClick={handleLinkClick}
+              >
+                <>Política de Privacidade&nbsp; |</>
+              </Link>
+            </h5>
+          </div>
+          <div>
+            <h5>
+              <Link
+                to="/termos-condicoes"
+                style={{ textDecoration: "none", color: "inherit" }}
+                onClick={handleLinkClick}
+              >
+                <>&nbsp; Termos e Condições&nbsp; |</>
+              </Link>
+            </h5>
+          </div>
+          <div>
+            <h5>
+              <div onClick={handleComplaints} style={{ cursor: "pointer" }}>
+                &nbsp; Livro de reclamações
+              </div>
+            </h5>
+          </div>
         </div>
       </div>
     </div>
