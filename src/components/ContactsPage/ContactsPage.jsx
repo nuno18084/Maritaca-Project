@@ -13,8 +13,9 @@ const ContactsPage = () => {
   const storeNumber = 211929411;
 
   useEffect(() => {
-    // Set cookies with SameSite=None; Secure attributes
-    Cookies.set("myCookie", "myValue", { sameSite: "None", secure: true });
+    // Example of getting a cookie
+    const myCookieValue = Cookies.get("myCookie");
+    // ...do something with myCookieValue
   }, []);
 
   return (
