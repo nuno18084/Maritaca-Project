@@ -42,8 +42,8 @@
     background-image: url(../../Images/Backgrounds/PromotionsBackgroundBig.png);
 
     background-attachment: fixed !important; /* Make background img fixed */
-    background-repeat: repeat; /* Don't repeat the img */
-    background-size: auto auto; /* Cover the entire screen */
+    background-repeat: no-repeat; /* Don't repeat the img */
+    background-size: cover; /* Cover the entire screen */
     border: none;
     outline: none;
     color: black;
