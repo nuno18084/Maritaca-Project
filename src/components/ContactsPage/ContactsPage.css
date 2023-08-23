@@ -13,7 +13,7 @@ body {
 .first-h1 {
   margin-bottom: 50px;
   padding-left: 2%;
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #f3b431;
 }
 
@@ -21,7 +21,7 @@ body {
   margin-bottom: 50px;
   padding-left: 2%;
   margin-top: 10%;
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #f3b431;
 }
 
@@ -29,7 +29,7 @@ body {
   margin-bottom: 50px;
   padding-left: 2%;
   margin-top: 10%;
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #f3b431;
 }
 
@@ -90,7 +90,7 @@ body {
     /* padding-left: 2%; */
     margin-top: 0;
     padding-left: 0;
-    font-size: 32px;
+    /* font-size: 32px; */
     color: #f3b431;
   }
   .third-h1 {

@@ -18,7 +18,7 @@ body {
 
 .pizza-specialities-h1 {
   padding-top: 30%;
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #f3b431;
   margin-bottom: 10%;
 }
@@ -31,7 +31,7 @@ body {
 
 .complete-menu-container-h1 {
   padding-top: 15%;
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #f3b431;
   margin-bottom: 10%;
 }

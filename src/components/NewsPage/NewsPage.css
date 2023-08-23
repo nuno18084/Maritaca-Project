@@ -13,7 +13,7 @@
 }
 
 .news-h1 {
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #f3b431;
   margin-bottom: 10%;
   padding-left: 2%;
@@ -22,11 +22,6 @@
 .news-list-item {
   list-style-type: none;
 }
-
-/* .news-list-item {
-  border-bottom: solid #e6e9ed 2px !important ; 
-  margin-top: 7%;
-} */
 
 .news-list-item:last-of-type {
   padding-bottom: 20%;
@@ -50,6 +45,9 @@
     padding-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .news-list {
+    padding-left: 0;
   }
   .news-list-item:last-of-type {
     padding-bottom: 10%;
