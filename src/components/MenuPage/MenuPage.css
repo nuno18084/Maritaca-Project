@@ -64,6 +64,8 @@ body {
   }
   .complete-menu-container {
     padding-bottom: 5%;
+    padding: 0;
+    padding-bottom: 10%;
   }
   .images-flex {
     padding-bottom: 5%;
@@ -82,5 +84,8 @@ body {
     top: 0;
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .menu-page {
+    padding-left: 0 !important;
   }
 }

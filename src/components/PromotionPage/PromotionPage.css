@@ -46,6 +46,9 @@
     padding-left: 5%;
     padding-right: 5%;
   }
+  .promotions-h1 {
+    padding-left: 0;
+  }
   .promotion-list-item:last-of-type {
     padding-bottom: 10%;
   }

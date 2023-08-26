@@ -48,92 +48,95 @@ const Footer = () => {
             <img src={MaritacaLogo} alt="footer-logo" className="footer-logo" />
           </Link>
         </div>
-        <div className="footer-main-address">
-          <h3>Morada</h3>
-          <p onClick={handleAdress} style={{ cursor: "pointer" }}>
-            Rua do Patrocínio 44A
-          </p>
-          <p>1350-230 Lisboa</p>
-        </div>
-        <br />
-        <div className="footer-main-schedule">
-          <h3>Horario</h3>
-          <p>3ª feira a Domingo: 12:00 - 15:00</p>
-          <p>19:00 - 22:30</p>
-        </div>
-        <br />
-        <div className="footer-numbers">
-          <h3>Contactos</h3>
-          <p>
-            <a
-              className="footer-numbers-a"
-              style={{ textDecoration: "none", color: "inherit" }}
-              href={`tel:${phoneNumber}`}
-            >
-              {phoneNumber}
-            </a>
-          </p>
-          <p>
-            <a
-              className="footer-numbers-a"
-              style={{ textDecoration: "none", color: "inherit" }}
-              href={`tel:${storeNumber}`}
-            >
-              {storeNumber}
-            </a>
-          </p>
-        </div>
-        <br />
-        <div className="social-media">
-          <h3>Siga-nos</h3>
-          <div className="social-media-icons">
-            <div>
-              <FaInstagram
-                size={25}
-                onClick={handleInstagram}
-                style={{ cursor: "pointer" }}
-              />
+        <div className="footer-address-schedule-contacts-follow">
+          <div className="footer-address-schedule">
+            <div className="footer-main-address">
+              <h3>Morada</h3>
+              <p onClick={handleAdress} style={{ cursor: "pointer" }}>
+                Rua do Patrocínio 44A
+              </p>
+              <p>1350-230 Lisboa</p>
             </div>
-            <div>
-              <FaFacebookF
-                size={25}
-                onClick={handleFacebook}
-                style={{ cursor: "pointer" }}
-              />
+            <div className="footer-main-schedule">
+              <h3>Horario</h3>
+              <p>3ª feira a Domingo: 12:00 - 15:00</p>
+              <p>19:00 - 22:30</p>
             </div>
           </div>
-        </div>
-        <br />
-        <div className="footer-privacy">
-          <div>
-            <h5>
-              <Link
-                to="/privacidade"
-                style={{ textDecoration: "none", color: "inherit" }}
-                onClick={handleLinkClick}
-              >
-                <>Política de Privacidade&nbsp; |</>
-              </Link>
-            </h5>
-          </div>
-          <div>
-            <h5>
-              <Link
-                to="/termos-condicoes"
-                style={{ textDecoration: "none", color: "inherit" }}
-                onClick={handleLinkClick}
-              >
-                <>&nbsp; Termos e Condições&nbsp; |</>
-              </Link>
-            </h5>
-          </div>
-          <div>
-            <h5>
-              <div onClick={handleComplaints} style={{ cursor: "pointer" }}>
-                &nbsp; Livro de reclamações
+          <div className="footer-contacts-social">
+            <div className="footer-numbers">
+              <h3>Contactos</h3>
+              <p>
+                <a
+                  className="footer-numbers-a"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                  href={`tel:${phoneNumber}`}
+                >
+                  {phoneNumber}
+                </a>
+              </p>
+              <p>
+                <a
+                  className="footer-numbers-a"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                  href={`tel:${storeNumber}`}
+                >
+                  {storeNumber}
+                </a>
+              </p>
+            </div>
+            <div className="social-media">
+              <h3>Siga-nos</h3>
+              <div className="social-media-icons">
+                <div>
+                  <FaInstagram
+                    size={25}
+                    onClick={handleInstagram}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+                <div>
+                  <FaFacebookF
+                    size={25}
+                    onClick={handleFacebook}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
               </div>
-            </h5>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div className="footer-privacy">
+        <div>
+          <h5>
+            <Link
+              to="/privacidade"
+              style={{ textDecoration: "none", color: "inherit" }}
+              onClick={handleLinkClick}
+            >
+              <>Política de Privacidade&nbsp; |</>
+            </Link>
+          </h5>
+        </div>
+        <div>
+          <h5>
+            <Link
+              to="/termos-condicoes"
+              style={{ textDecoration: "none", color: "inherit" }}
+              onClick={handleLinkClick}
+            >
+              <>&nbsp; Termos e Condições&nbsp; |</>
+            </Link>
+          </h5>
+        </div>
+        <div>
+          <h5>
+            <div onClick={handleComplaints} style={{ cursor: "pointer" }}>
+              &nbsp; Livro de reclamações
+            </div>
+          </h5>
         </div>
       </div>
     </div>

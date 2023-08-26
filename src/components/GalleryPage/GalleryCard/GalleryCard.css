@@ -56,4 +56,10 @@
   .carousel-3 {
     margin: 5%;
   }
+  .gallery-sub-title {
+    padding-left: 0;
+  }
+  .gallery-page-title {
+    padding-left: 0 !important;
+  }
 }

@@ -31,7 +31,7 @@ function GalleryCard() {
   return (
     <div className="galery-card-container">
       <div className="galery-title-container">
-        <h1>Galeria</h1>
+        <h1 className="gallery-page-title">Galeria</h1>
       </div>
       <div className="carousel-container">
         <div className="carousel-1">
