@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Logo from "../../Images/Logos/maritacaLogo.png";
 import "./HomePage.css";
 import "../../App.css";
 import { motion } from "framer-motion";
 
 const HomePage = () => {
-  const handleLinkClickMenu = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // const handleLinkClickMenu = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <>
