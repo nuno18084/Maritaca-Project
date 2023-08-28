@@ -22,7 +22,7 @@ const HomePage = () => {
         exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
       >
         <img src={Logo} alt="logo" className="main-page-logo" />
-        <Link
+        {/* <Link
           to="/menu"
           onClick={handleLinkClickMenu}
           style={{ textDecoration: "none", color: "inherit" }}
@@ -30,7 +30,7 @@ const HomePage = () => {
           <div className="bottom-section">
             <button className="home-menu">Ver o Menu</button>
           </div>
-        </Link>
+        </Link> */}
       </motion.div>
     </>
   );
