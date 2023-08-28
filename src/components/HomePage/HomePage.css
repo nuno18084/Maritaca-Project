@@ -54,6 +54,7 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
+    width: 30%;
   }
   .home-main {
     background-image: url(../../Images/Backgrounds/HomeBackgroundBig.png) !important;
