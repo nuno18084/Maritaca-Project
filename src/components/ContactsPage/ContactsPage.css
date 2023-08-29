@@ -70,6 +70,22 @@ body {
   text-decoration: none !important;
 }
 
+.partners-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contacts-partners {
+  margin-bottom: 35px;
+}
+
+.glovo-icon {
+  width: 45px;
+  height: 45px;
+}
+
 @media only screen and (min-width: 700px) {
   .contacts-page {
     background-color: rgba(75, 69, 57, 0.9);
@@ -102,5 +118,14 @@ body {
   .contacts-page-p-delivery {
     width: 50%;
     margin-left: 0;
+  }
+  .partners-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .partner-icon {
+    cursor: pointer;
   }
 }

@@ -6,17 +6,39 @@ import "./ContactsPage.css";
 import Footer from "../Footer/Footer";
 import "../../App.css";
 import { motion } from "framer-motion";
-// import Cookies from "js-cookie";
+import zomato from "../../Images/Icons/zomato.svg";
+import uberEats from "../../Images/Icons/uberEats.svg";
+import glovo from "../../Images/Icons/glovo.svg";
+import bolt from "../../Images/Icons/bolt.svg";
 
 const ContactsPage = () => {
   const phoneNumber = 912625557;
   const storeNumber = 211929411;
 
-  // useEffect(() => {
-  //   // Example of getting a cookie
-  //   const myCookieValue = Cookies.get("myCookie");
-  //   // ...do something with myCookieValue
-  // }, []);
+  const handleUberClick = () => {
+    window.open(
+      "https://www.ubereats.com/pt/store/maritaca/iM71WUmmQnGQZ15B73a_tA",
+      "_blank"
+    );
+  };
+
+  const handleZomatoClick = () => {
+    window.open(
+      "https://www.zomatoportugal.com/r/8212204/maritaca-lapa-estrela",
+      "_blank"
+    );
+  };
+
+  const handleGlovoClick = () => {
+    window.open("https://glovoapp.com/pt/en/lisbon/maritaca-lis/", "_blank");
+  };
+
+  const handleBoltClick = () => {
+    window.open(
+      "https://food.bolt.eu/pt-PT/386-lisbon/p/5145-maritaca",
+      "_blank"
+    );
+  };
 
   return (
     <>
@@ -89,6 +111,45 @@ const ContactsPage = () => {
             Fazemos entregas dos nossos pratos num raio de 2 quilómetros. Valor
             mínimo para entrega de 20€.
           </p>
+        </div>
+        <div className="contacts-partners">
+          <div>
+            <h1 className="third-h1">Parceiros</h1>
+          </div>
+          <div className="partners-icons">
+            <div>
+              <img
+                className="partner-icon"
+                onClick={handleUberClick}
+                src={uberEats}
+                alt="uber-eats"
+              />
+            </div>
+            <div>
+              <img
+                className="partner-icon"
+                onClick={handleZomatoClick}
+                src={zomato}
+                alt="zomato"
+              />
+            </div>
+            <div>
+              <img
+                onClick={handleGlovoClick}
+                className="glovo-icon partner-icon"
+                src={glovo}
+                alt="glovo"
+              />
+            </div>
+            <div>
+              <img
+                className="partner-icon"
+                onClick={handleBoltClick}
+                src={bolt}
+                alt="bolt"
+              />
+            </div>
+          </div>
         </div>
       </motion.div>
       <Footer />
