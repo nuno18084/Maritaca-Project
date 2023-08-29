@@ -11,7 +11,7 @@ const NavBarLogo = () => {
       <style>
         {`
           .navbarLogo-transition {
-            animation: logoFadeIn 0.3s ease-in 0.5s forwards;
+            animation: logoFadeIn 0.3s ease-in 0.3s forwards;
             opacity: 0;
           }
 
