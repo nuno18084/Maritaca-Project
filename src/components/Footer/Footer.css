@@ -40,6 +40,10 @@ body {
   margin-bottom: 5px;
 }
 
+.footer-main p:last-of-type {
+  margin-bottom: 25px;
+}
+
 .footer-main h5 {
   font-weight: 300;
   font-size: 10px;
