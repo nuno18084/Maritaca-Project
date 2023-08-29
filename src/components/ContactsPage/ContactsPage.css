@@ -128,4 +128,25 @@ body {
   .partner-icon {
     cursor: pointer;
   }
+  .contacts-delivery-partners {
+    display: flex;
+    align-items: center !important;
+    justify-content: left;
+    flex-direction: row;
+  }
+  .contacts-partners {
+    margin-bottom: 0;
+  }
+  .contacts-partners h1 {
+    text-align: left;
+  }
+  .contacts-delivery-section {
+    max-width: 70%;
+  }
+  /* .contacts-partners {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  } */
 }

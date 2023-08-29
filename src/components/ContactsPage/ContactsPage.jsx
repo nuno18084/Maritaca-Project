@@ -104,50 +104,51 @@ const ContactsPage = () => {
             ></iframe>
           </div>
         </div>
-
-        <div>
-          <h1 className="third-h1">Delivery</h1>
-          <p className="contacts-page-p contacts-page-p-delivery">
-            Fazemos entregas dos nossos pratos num raio de 2 quilómetros. Valor
-            mínimo para entrega de 20€.
-          </p>
-        </div>
-        <div className="contacts-partners">
-          <div>
-            <h1 className="third-h1">Parceiros</h1>
+        <div className="contacts-delivery-partners">
+          <div className="contacts-delivery-section">
+            <h1 className="third-h1">Delivery</h1>
+            <p className="contacts-page-p contacts-page-p-delivery">
+              Fazemos entregas dos nossos pratos num raio de 2 quilómetros.
+              Valor mínimo para entrega de 20€.
+            </p>
           </div>
-          <div className="partners-icons">
+          <div className="contacts-partners">
             <div>
-              <img
-                className="partner-icon"
-                onClick={handleUberClick}
-                src={uberEats}
-                alt="uber-eats"
-              />
+              <h1 className="third-h1">Parceiros</h1>
             </div>
-            <div>
-              <img
-                className="partner-icon"
-                onClick={handleZomatoClick}
-                src={zomato}
-                alt="zomato"
-              />
-            </div>
-            <div>
-              <img
-                onClick={handleGlovoClick}
-                className="glovo-icon partner-icon"
-                src={glovo}
-                alt="glovo"
-              />
-            </div>
-            <div>
-              <img
-                className="partner-icon"
-                onClick={handleBoltClick}
-                src={bolt}
-                alt="bolt"
-              />
+            <div className="partners-icons">
+              <div>
+                <img
+                  className="partner-icon"
+                  onClick={handleUberClick}
+                  src={uberEats}
+                  alt="uber-eats"
+                />
+              </div>
+              <div>
+                <img
+                  className="partner-icon"
+                  onClick={handleZomatoClick}
+                  src={zomato}
+                  alt="zomato"
+                />
+              </div>
+              <div>
+                <img
+                  onClick={handleGlovoClick}
+                  className="glovo-icon partner-icon"
+                  src={glovo}
+                  alt="glovo"
+                />
+              </div>
+              <div>
+                <img
+                  className="partner-icon"
+                  onClick={handleBoltClick}
+                  src={bolt}
+                  alt="bolt"
+                />
+              </div>
             </div>
           </div>
         </div>
