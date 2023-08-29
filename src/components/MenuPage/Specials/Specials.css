@@ -85,4 +85,15 @@ span {
   .menu-page {
     padding-left: 0;
   }
+  .specials-pizzas {
+    width: 60%;
+  }
+
+  .specials-rolinhos {
+    width: 60%;
+  }
+
+  .specials-salads {
+    width: 60%;
+  }
 }

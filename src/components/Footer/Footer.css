@@ -128,7 +128,7 @@ body {
   .footer-address-schedule-contacts-follow {
     display: flex;
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: row;
     gap: 10%;
     width: 60%;

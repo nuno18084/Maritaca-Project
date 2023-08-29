@@ -2,7 +2,7 @@ const pizzaData = [
   {
     name: "5 Cogumelos",
     ingredients:
-      "Molho de Tomate | Mozzarella 100% | Cogumelos Paris, Shiitake, Shimaji, Portobello, Marron, Parmesão",
+      "Molho de Tomate | Mozzarella 100% | Cogumelos Paris, Shiitake, Shimaji, Portobello, Marron | Parmesão",
     price: 12.5,
     // photoName: "pizzas/focaccia.jpg",
     soldOut: false,
