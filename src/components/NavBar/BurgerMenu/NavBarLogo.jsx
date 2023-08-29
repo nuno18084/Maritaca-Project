@@ -8,9 +8,30 @@ import "../../NavBar/NavBar.css";
 const NavBarLogo = () => {
   return (
     <div className="navbar-logo-container">
+      <style>
+        {`
+          .navbarLogo-transition {
+            animation: logoFadeIn 0.1s ease-in 0.5s forwards;
+            opacity: 0;
+          }
+
+          @keyframes logoFadeIn {
+            to {
+              opacity: 1;
+            }
+          }
+        `}
+      </style>
+
       <Link to="/">
         <div>
-          <img src={BirdLogo} alt="bird-logo" width={80} height={60} />
+          <img
+            className="navbarLogo-transition"
+            src={BirdLogo}
+            alt="bird-logo"
+            width={80}
+            height={60}
+          />
         </div>
       </Link>
       <div>
