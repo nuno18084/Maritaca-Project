@@ -96,6 +96,11 @@ nav {
   font-family: "Source Code Pro", monospace;
   /* padding-bottom: 10px; */
 }
+
+.nav-ul .active .nav-list {
+  color: #f3b431;
+}
+
 .nav-bar-desktop {
   display: none;
 }
