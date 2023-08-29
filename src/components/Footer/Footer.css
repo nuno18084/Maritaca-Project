@@ -133,4 +133,13 @@ body {
     gap: 10%;
     width: 60%;
   }
+  .footer-numbers {
+    align-items: flex-start;
+  }
+  .social-media {
+    align-items: flex-start;
+  }
+  .linkedInNuno {
+    cursor: pointer;
+  }
 }

@@ -36,6 +36,13 @@ const Footer = () => {
     });
   };
 
+  const handleNunoClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/nuno-cola%C3%A7o-836163174/",
+      "_blank"
+    );
+  };
+
   return (
     <div className="footer-container">
       <div className="footer-main">
@@ -134,9 +141,12 @@ const Footer = () => {
         <div>
           <h5>
             <div onClick={handleComplaints} style={{ cursor: "pointer" }}>
-              &nbsp; Livro de reclamações
+              &nbsp; Livro de reclamações&nbsp; |
             </div>
           </h5>
+        </div>
+        <div className="linkedInNuno" onClick={handleNunoClick}>
+          <h5>&nbsp;Website By: Nuno Colaço</h5>
         </div>
       </div>
     </div>
