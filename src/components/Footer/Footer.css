@@ -71,6 +71,17 @@ body {
   gap: 15%;
 }
 
+.footer-privacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column !important;
+}
+
+.footer-privacy h5 {
+  font-size: 9px;
+}
+
 @media only screen and (min-width: 700px) {
   .footer-main {
     display: flex;
