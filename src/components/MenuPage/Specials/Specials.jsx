@@ -40,8 +40,27 @@ function specialsMenu() {
   return (
     <div className="menu-menu menu-page">
       <div className="specials-btn-container">
+        <style>
+          {`
+          .specialsMenu-transition {
+            animation: buttonFadeIn 0.15s ease-in 0.15s forwards;
+            opacity: 0;
+          }
+
+          @keyframes buttonFadeIn {
+            to {
+              opacity: 1;
+            }
+          }
+        `}
+        </style>
+
         <button
-          className={`${showPizza ? "specials-btn-active" : "specials-btn"}`}
+          className={`${
+            showPizza
+              ? "specials-btn-active specialsMenu-transition"
+              : "specials-btn"
+          }`}
           onClick={() => {
             togglePizza();
           }}
@@ -49,7 +68,11 @@ function specialsMenu() {
           Pizzas
         </button>
         <button
-          className={`${showRolinho ? "specials-btn-active" : "specials-btn"}`}
+          className={`${
+            showRolinho
+              ? "specials-btn-active specialsMenu-transition"
+              : "specials-btn"
+          }`}
           onClick={() => {
             toggleRolinho();
           }}
@@ -57,7 +80,11 @@ function specialsMenu() {
           Rolinhos
         </button>
         <button
-          className={`${showSalad ? "specials-btn-active" : "specials-btn"}`}
+          className={`${
+            showSalad
+              ? "specials-btn-active specialsMenu-transition"
+              : "specials-btn"
+          }`}
           onClick={() => {
             toggleSalad();
           }}
