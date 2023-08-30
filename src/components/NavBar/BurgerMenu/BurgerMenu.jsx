@@ -82,7 +82,7 @@ const BurgerMenu = () => {
                   handleLinkClick();
                 }}
                 style={{ textDecoration: "none", color: "inherit" }}
-                activeClassName="active"
+                activeclassname="active"
               >
                 <h1 className="nav-list">Home</h1>
               </NavLink>
@@ -93,7 +93,7 @@ const BurgerMenu = () => {
                 }}
                 to="/menu"
                 style={{ textDecoration: "none", color: "inherit" }}
-                activeClassName="active"
+                activeclassname="active"
               >
                 <h1 className="nav-list">Menu</h1>
               </NavLink>
@@ -104,7 +104,7 @@ const BurgerMenu = () => {
                 }}
                 to="/promocoes"
                 style={{ textDecoration: "none", color: "inherit" }}
-                activeClassName="active"
+                activeclassname="active"
               >
                 <h1 className="nav-list">Promoções</h1>
               </NavLink>
@@ -115,7 +115,7 @@ const BurgerMenu = () => {
                 }}
                 to="/novidades"
                 style={{ textDecoration: "none", color: "inherit" }}
-                activeClassName="active"
+                activeclassname="active"
               >
                 <h1 className="nav-list">Novidades</h1>
               </NavLink>
@@ -126,7 +126,7 @@ const BurgerMenu = () => {
                 }}
                 to="/galeria"
                 style={{ textDecoration: "none", color: "inherit" }}
-                activeClassName="active"
+                activeclassname="active"
               >
                 <h1 className="nav-list">Galeria</h1>
               </NavLink>
@@ -137,7 +137,7 @@ const BurgerMenu = () => {
                 }}
                 to="/contactos"
                 style={{ textDecoration: "none", color: "inherit" }}
-                activeClassName="active"
+                activeclassname="active"
               >
                 <h1 className="nav-list">Contactos</h1>
               </NavLink>
