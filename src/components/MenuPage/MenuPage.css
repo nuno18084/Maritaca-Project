@@ -12,6 +12,9 @@ body {
   background-image: url(../../Images/Backgrounds/MenuBackground.png);
   background-repeat: repeat;
   background-attachment: fixed !important;
+  background-size: cover;
+  background-position: center bottom;
+
   border: none;
   outline: none;
 }
@@ -71,7 +74,7 @@ body {
   .main-menu-page {
     background-image: url(../../Images/Backgrounds/MenuBackgroundBig.png) !important;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     width: 100%;
     z-index: 1;

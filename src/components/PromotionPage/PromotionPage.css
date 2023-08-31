@@ -8,6 +8,8 @@
   background-attachment: fixed !important;
   background-repeat: repeat;
   background-size: cover;
+  background-position: center bottom;
+
   border: none;
   outline: none;
   color: black;
@@ -38,6 +40,8 @@
     background-attachment: fixed !important;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
+
     border: none;
     outline: none;
     color: black;

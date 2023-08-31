@@ -107,8 +107,8 @@ body {
   .partners-h1 {
     margin-top: 0;
   }
-  iframe {
-    width: 500px;
+  .map-section {
+    width: 50%;
   }
   .contacts-page-p-delivery {
     width: 50%;
