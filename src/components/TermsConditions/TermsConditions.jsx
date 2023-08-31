@@ -3,10 +3,6 @@ import "./TermsConditions.css";
 import Footer from "../Footer/Footer";
 
 const TermsConditions = () => {
-  const year = new Date().getFullYear();
-  const month = new Date().getMonth() + 1;
-  const day = new Date().getDate();
-
   return (
     <>
       <div className="terms-page">
@@ -16,9 +12,9 @@ const TermsConditions = () => {
           <h2>1. Introdução</h2>
           <p>
             Estes termos e condições regem o uso do nosso website. Ao acessar e
-            utilizar este site, você concorda em obedecer a estes termos e
-            condições. Se você não concorda com algum destes termos, por favor,
-            não continue a utilizar o site.
+            utilizar este site, concorda em obedecer a estes termos e condições.
+            Se não concorda com algum destes termos, por favor, não continue a
+            utilizar o site.
           </p>
           <h2>2. Uso do Site</h2>
           <p>
@@ -32,12 +28,12 @@ const TermsConditions = () => {
             Todos os conteúdos presentes no site, incluindo textos, gráficos,
             logotipos, imagens e software, são de propriedade exclusiva da
             Maritaca ou de seus licenciadores e estão protegidos pelas leis de
-            direitos autorais e propriedade intelectual aplicáveis.
+            direitos de autor e propriedade intelectual aplicáveis.
           </p>
           <h2>5. Limitação de Responsabilidade</h2>
           <p>
             Não nos responsabilizamos por quaisquer danos diretos, indiretos,
-            incidentais, consequenciais ou punitivos resultantes do uso deste
+            acidentais, consequenciais ou punitivos resultantes do uso deste
             site ou de qualquer conteúdo presente nele.
           </p>
           <h2>6. Alterações nos Termos</h2>
@@ -54,9 +50,7 @@ const TermsConditions = () => {
             condições, por favor, entre em contato conosco através do email:
             quiosquemaritaca@gmail.com.
           </p>
-          <p>
-            Última atualização: {day}/{month}/{year}
-          </p>
+          <p>Última atualização: 01/09/2023 - V1</p>
         </div>
       </div>
       <Footer />

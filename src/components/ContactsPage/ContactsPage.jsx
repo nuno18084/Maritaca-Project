@@ -114,7 +114,7 @@ const ContactsPage = () => {
           </div>
           <div className="contacts-partners">
             <div>
-              <h1 className="third-h1">Parceiros</h1>
+              <h1 className="third-h1 partners-h1">Parceiros</h1>
             </div>
             <div className="partners-icons">
               <div>

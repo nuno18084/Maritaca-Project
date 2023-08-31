@@ -61,7 +61,7 @@
     background-size: cover; /* Change to 'contain' */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100svh;
     width: 100%;
     display: flex;
     align-items: center;
