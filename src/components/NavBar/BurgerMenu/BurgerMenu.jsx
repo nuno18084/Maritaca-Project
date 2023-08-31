@@ -60,10 +60,7 @@ const BurgerMenu = () => {
 
   return (
     <div className="nav-placeholder">
-      <div
-        className="nav-container"
-        // style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
-      >
+      <div className="nav-container">
         <div>
           <nav>
             <div className="burger-menu" onClick={updateMenu}>
@@ -74,7 +71,6 @@ const BurgerMenu = () => {
           </nav>
           <div className={menuClass}>
             <div className="nav-ul">
-              {/* <br /> */}
               <NavLink
                 to="/"
                 onClick={() => {

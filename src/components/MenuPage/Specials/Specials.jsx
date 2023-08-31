@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { pizzaData, rolinhoData, saladData } from "./SpecialsData";
 import "./Specials.css";
-// import PizzaImg from "../../../Images/MenuPic.png";
 
 function specialsMenu() {
   const [showPizza, setShowPizza] = useState(true);

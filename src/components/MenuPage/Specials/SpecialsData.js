@@ -4,7 +4,6 @@ const pizzaData = [
     ingredients:
       "Molho de Tomate | Mozzarella 100% | Cogumelos Paris, Shiitake, Shimaji, Portobello, Marron | Parmesão",
     price: 12.5,
-    // photoName: "pizzas/focaccia.jpg",
     soldOut: false,
   },
   {
@@ -55,7 +54,6 @@ const rolinhoData = [
     name: "Alho",
     ingredients: "Manteiga de Alho | Mozzarella 100%",
     price: 3.9,
-    // photoName: "pizzas/focaccia.jpg",
     soldOut: false,
   },
   {
@@ -89,7 +87,6 @@ const saladData = [
     name: "Pêra e Parmesão",
     ingredients: "Rúcula | Parmesão | Pêra | Azeite | Creme Balsâmico",
     price: 7,
-    // photoName: "pizzas/focaccia.jpg",
     soldOut: false,
   },
   {
@@ -111,21 +108,8 @@ const promotionsData = [
     name: "Tabuleiro + Rolinho",
     ingredients: "Na compra de um tabuleiro, oferecemos um rolinho de alho.",
     price: 6,
-    // photoName: "pizzas/focaccia.jpg",
     soldOut: false,
   },
-  // {
-  //   name: "",
-  //   ingredients: "Tomato and mozarella",
-  //   price: 10,
-  //   soldOut: false,
-  // },
-  // {
-  //   name: "Promoção 3",
-  //   ingredients: "Tomato, mozarella, spinach, and ricotta cheese",
-  //   price: 12,
-  //   soldOut: false,
-  // },
 ];
 
 const newsData = [
@@ -133,7 +117,6 @@ const newsData = [
     name: "Piadina de Salmão e Abacate",
     ingredients: "Salmão | Abacate",
     price: 8,
-    // photoName: "pizzas/focaccia.jpg",
     soldOut: false,
   },
   {

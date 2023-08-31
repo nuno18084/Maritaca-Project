@@ -3,9 +3,9 @@
 .news-page {
   background-color: #4b4539;
   background-image: url(../../Images/Backgrounds/NewsBackground.png);
-  background-attachment: fixed !important; /* Make background img fixed */
-  background-repeat: repeat; /* Don't repeat the img */
-  background-size: auto auto; /* Cover the entire screen */
+  background-attachment: fixed !important; 
+  background-repeat: repeat; 
+  background-size: auto auto; 
   border: none;
   outline: none;
   color: black;
@@ -13,7 +13,6 @@
 }
 
 .news-h1 {
-  /* font-size: 32px; */
   color: #f3b431;
   margin-bottom: 10%;
   padding-left: 2%;
@@ -36,9 +35,9 @@
   .news-page {
     background-color: #4b4539;
     background-image: url(../../Images/Backgrounds/NewsBackgroundBig.png);
-    background-attachment: fixed !important; /* Make background img fixed */
-    background-repeat: no-repeat; /* Don't repeat the img */
-    background-size: cover; /* Cover the entire screen */
+    background-attachment: fixed !important; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
     border: none;
     outline: none;
     color: black;

@@ -12,8 +12,8 @@ body {
   line-height: 1.5;
   padding-top: 5%;
   background-image: url(../../Images/Backgrounds/FooterBackground.png);
-  background-attachment: fixed !important; /* Make background img fixed */
-  background-repeat: repeat; /* Don't repeat the img */
+  background-attachment: fixed !important;
+  background-repeat: repeat;
   background-size: auto auto;
 }
 
@@ -95,7 +95,6 @@ body {
     flex-wrap: wrap;
     padding-bottom: 5%;
     padding-left: 0;
-    /* padding-right: 0; */
   }
   .footer-logo {
     width: 45%;
@@ -127,8 +126,6 @@ body {
   }
   .footer-address-schedule-contacts-follow {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     flex-direction: row;
     gap: 10%;
     width: 60%;

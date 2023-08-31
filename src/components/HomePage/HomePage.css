@@ -3,12 +3,9 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 .home-main {
-  /* background-color: black; */
-  /* max-height: 100%; */
   background-image: url(../../Images/Backgrounds/HomeBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,8 +55,8 @@
   }
   .home-main {
     background-image: url(../../Images/Backgrounds/HomeBackgroundBig.png) !important;
-    background-size: cover; /* Change to 'contain' */
-    background-position: center; /* Center the image */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100svh;
     width: 100%;
@@ -67,6 +64,6 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
-    top: 0; /* Change to 0 */
+    top: 0;
   }
 }
