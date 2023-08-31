@@ -9,7 +9,7 @@ const pizzaData = [
   {
     name: "Do Bosque",
     ingredients:
-      "Molho de Tomate | Mozzarella 100% | Requeijão | Espargos | Ovo | Salsa | Azeite dee Trufa | Cebola Confitada | Amêndoa Torrada",
+      "Molho de Tomate | Mozzarella 100% | Requeijão | Espargos | Ovo | Salsa | Azeite de Trufa | Cebola Confitada | Amêndoa Torrada",
     price: 12.5,
     soldOut: false,
   },
@@ -23,27 +23,27 @@ const pizzaData = [
   {
     name: "Marron",
     ingredients:
-      "Mozzarella 100% | Cogumelos Marron | Alho | Salsa |  Parmesão | Azeite de Trufa ",
+      "Mozzarella 100% | Cogumelos Marron | Alho | Salsa | Parmesão | Azeite de Trufa ",
     price: 12.5,
     soldOut: false,
   },
   {
     name: "Tomatina",
     ingredients:
-      "Molho de Tomate | Mozzarella 100% |  Manjericão | Tomate Cherry | Mozzarella Di Bufala |  Parmesão",
+      "Molho de Tomate | Mozzarella 100% | Manjericão | Tomate Cherry | Mozzarella Di Bufala | Parmesão",
     price: 12.5,
     soldOut: false,
   },
   {
     name: "Figo",
     ingredients:
-      "Mozzarella 100% |  Figo |  Gorgonzola | Presunto |  Mel | Oregãos",
+      "Mozzarella 100% | Figo | Gorgonzola | Presunto |  Mel | Oregãos",
     price: 12.5,
     soldOut: false,
   },
   {
     name: "Trufa",
-    ingredients: "Gorgonzola |  Salsa Trufada | Rúcula |  Azeite de Trufa",
+    ingredients: "Gorgonzola | Salsa Trufada | Rúcula | Azeite de Trufa",
     price: 13,
     soldOut: false,
   },
@@ -133,7 +133,7 @@ const newsData = [
   },
   {
     name: "Tiramisù",
-    ingredients: "Café | Palitos Larraine | Cacau em Pó | Ovos",
+    ingredients: "Café | Palitos La Reine | Cacau em Pó | Ovos",
     price: 4,
     soldOut: false,
   },

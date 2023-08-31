@@ -65,7 +65,7 @@ const Footer = () => {
               <p>1350-230 Lisboa</p>
             </div>
             <div className="footer-main-schedule">
-              <h3>Horario</h3>
+              <h3>Horário</h3>
               <p>3ª feira a Domingo: 12:00 - 15:00</p>
               <p>19:00 - 22:30</p>
             </div>

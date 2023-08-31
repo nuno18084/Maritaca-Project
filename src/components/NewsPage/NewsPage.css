@@ -61,7 +61,7 @@
 }
 
 @media only screen and (min-width: 375px) and (max-width: 425px) {
-  .home-main {
+  .news-page {
     background-image: url(../../Images/Backgrounds/NewsBackgroundMedium.png) !important;
     background-size: cover;
     background-position: center bottom;
