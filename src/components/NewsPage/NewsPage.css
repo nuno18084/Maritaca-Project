@@ -33,6 +33,10 @@
   padding-left: 2%;
 }
 
+.menu-page p {
+  width: 90%;
+}
+
 @media only screen and (min-width: 700px) {
   .news-page {
     background-color: #4b4539;
@@ -57,5 +61,13 @@
   }
   .news-list-item:last-of-type {
     padding-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .news-page {
+    background-image: url(../../Images/Backgrounds/NewsBackgroundMedium.png) !important;
+    background-size: cover;
+    background-position: center bottom;
   }
 }

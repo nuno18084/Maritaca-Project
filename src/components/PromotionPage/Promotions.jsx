@@ -35,9 +35,9 @@ function Promotion({ promotionObject }) {
       <div className="menu-page">
         <h3>{promotionObject.name}</h3>
         <p>{promotionObject.ingredients}</p>
-        <span>
+        {/* <span>
           {promotionObject.soldOut ? "SOLD OUT" : promotionObject.price}€
-        </span>
+        </span> */}
       </div>
     </li>
   );

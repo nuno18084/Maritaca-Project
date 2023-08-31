@@ -54,6 +54,10 @@ body {
   width: 40%;
 }
 
+.menu-page p {
+  width: 90%;
+}
+
 @media only screen and (min-width: 700px) {
   .pizza-specialities-h1 {
     padding-top: 15%;
@@ -84,5 +88,13 @@ body {
   }
   .menu-page {
     padding-left: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .main-menu-page {
+    background-image: url(../../Images/Backgrounds/MenuBackgroundMedium.png) !important;
+    background-size: cover;
+    background-position: center bottom;
   }
 }

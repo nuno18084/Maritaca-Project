@@ -57,7 +57,7 @@ const ContactsPage = () => {
               <p className="contacts-page-p">1350-230 Lisboa</p>
             </div>
             <div>
-              <h2>Horario</h2>
+              <h2>Horário</h2>
               <p className="contacts-page-p">
                 3ª feira a Domingo: 12:00 - 15:00 | 19:00 - 22:30
               </p>
@@ -108,8 +108,8 @@ const ContactsPage = () => {
           <div className="contacts-delivery-section">
             <h1 className="third-h1">Delivery</h1>
             <p className="contacts-page-p contacts-page-p-delivery">
-              Fazemos entregas dos nossos pratos num raio de 2 quilómetros.
-              Valor mínimo para entrega de 20€.
+              Fazemos entregas num raio de 2 quilómetros. Valor mínimo para
+              entrega de 20€.
             </p>
           </div>
           <div className="contacts-partners">
