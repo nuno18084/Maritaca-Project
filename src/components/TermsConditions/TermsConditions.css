@@ -1,8 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
 
 .terms-page {
-  background-color: white;
-  color: black;
-  height: 100%;
-  padding: 5% 2% 10% 2%;
+  background-color: rgba(75, 69, 57, 0.9);
+  color: white;
+  padding: 30% 2% 10% 2%;
+}
+
+.terms-page h1 {
+  color: #f3b431;
+}
+
+.terms-page h2 {
+  color: #f3b431;
+}
+
+.terms-page p {
+  margin-bottom: 10%;
+}
+
+@media only screen and (min-width: 700px) {
+  .terms-page {
+    padding: 15% 5% 10% 5%;
+  }
+  .terms-page p {
+    margin-bottom: 5%;
+  }
 }

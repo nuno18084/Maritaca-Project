@@ -3,45 +3,67 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: black !important;
-  /* overflow: hidden; */
 }
 
 .home-main {
-  background-color: black;
-  height: 75vh;
+  background-image: url(../../Images/Backgrounds/HomeBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100svh;
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10%;
   flex-direction: column;
   z-index: 1;
-  padding-bottom: 20px;
-  gap: 10px;
+  overflow-y: hidden !important;
+  top: 0;
 }
 
 .main-page-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  padding-top: 0;
-  margin-top: 40px;
-  padding-bottom: 25%;
+  width: 70%;
 }
 
 .home-menu {
-  color: #f3b431;
+  color: white;
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .bottom-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 5px;
   z-index: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .main-page-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    width: 30%;
+  }
+  .home-main {
+    background-image: url(../../Images/Backgrounds/HomeBackgroundBig.png) !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: 0;
+  }
 }

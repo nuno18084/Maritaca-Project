@@ -1,6 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
 
 .news-page {
-  background-color: white;
-  height: 100vh;
+  background-color: #4b4539;
+  background-image: url(../../Images/Backgrounds/NewsBackground.png);
+  background-attachment: fixed !important; 
+  background-repeat: repeat; 
+  background-size: auto auto; 
+  border: none;
+  outline: none;
+  color: black;
+  padding-top: 30%;
+}
+
+.news-h1 {
+  color: #f3b431;
+  margin-bottom: 10%;
+  padding-left: 2%;
+}
+
+.news-list-item {
+  list-style-type: none;
+}
+
+.news-list-item:last-of-type {
+  padding-bottom: 20%;
+}
+
+.news-list {
+  margin-bottom: 0;
+  padding-left: 2%;
+}
+
+@media only screen and (min-width: 700px) {
+  .news-page {
+    background-color: #4b4539;
+    background-image: url(../../Images/Backgrounds/NewsBackgroundBig.png);
+    background-attachment: fixed !important; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border: none;
+    outline: none;
+    color: black;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .news-h1 {
+    padding-left: 0;
+  }
+  .news-list {
+    padding-left: 0;
+  }
+  .news-list-item:last-of-type {
+    padding-bottom: 10%;
+  }
 }

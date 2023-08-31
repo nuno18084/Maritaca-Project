@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { pizzaData, rolinhoData, saladData } from "./SpecialsData";
 import "./Specials.css";
-import PizzaImg from "../../../Images/MenuPic.png";
 
 function specialsMenu() {
   const [showPizza, setShowPizza] = useState(true);
@@ -40,8 +39,27 @@ function specialsMenu() {
   return (
     <div className="menu-menu menu-page">
       <div className="specials-btn-container">
+        <style>
+          {`
+          .specialsMenu-transition {
+            animation: buttonFadeIn 0.15s ease-in 0.15s forwards;
+            opacity: 0;
+          }
+
+          @keyframes buttonFadeIn {
+            to {
+              opacity: 1;
+            }
+          }
+        `}
+        </style>
+
         <button
-          className={`${showPizza ? "specials-btn-active" : "specials-btn"}`}
+          className={`${
+            showPizza
+              ? "specials-btn-active specialsMenu-transition"
+              : "specials-btn"
+          }`}
           onClick={() => {
             togglePizza();
           }}
@@ -49,7 +67,11 @@ function specialsMenu() {
           Pizzas
         </button>
         <button
-          className={`${showRolinho ? "specials-btn-active" : "specials-btn"}`}
+          className={`${
+            showRolinho
+              ? "specials-btn-active specialsMenu-transition"
+              : "specials-btn"
+          }`}
           onClick={() => {
             toggleRolinho();
           }}
@@ -57,7 +79,11 @@ function specialsMenu() {
           Rolinhos
         </button>
         <button
-          className={`${showSalad ? "specials-btn-active" : "specials-btn"}`}
+          className={`${
+            showSalad
+              ? "specials-btn-active specialsMenu-transition"
+              : "specials-btn"
+          }`}
           onClick={() => {
             toggleSalad();
           }}
@@ -66,44 +92,9 @@ function specialsMenu() {
         </button>
       </div>
 
-      {/* <ul
-        className="specials-list"
-        style={{
-          backgroundImage: showPizza
-            ? `url(${PizzaImg})`
-            : showRolinho
-            ? `url(${PizzaImg})`
-            : showSalad
-            ? `url(${PizzaImg})`
-            : "none",
-          backgroundSize: "cover",
-          margin: "0",
-          padding: "0",
-        }}
-      > */}
-      {/* <div
-        className="specials-pizzas"
-        style={{
-          background: showPizza ? `url(${PizzaImg})` : "none",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      > */}
-
-      <div
-      // className={`${
-      //   showPizza
-      //     ? "pizza-back-img"
-      //     : showRolinho
-      //     ? "rolinho-back-img"
-      //     : showSalad
-      //     ? "salad-back-img"
-      //     : "none"
-      // }`}
-      >
+      <div>
         {showPizza && numPizzas > 0 ? (
           <div className="specials-section">
-            <img src={PizzaImg} alt="pizza" className="map-image" />
             <ul className="specials-pizzas">
               {pizzas.map((pizza) => (
                 <Pizza pizzaObject={pizza} key={pizza.name} />
@@ -111,12 +102,9 @@ function specialsMenu() {
             </ul>
           </div>
         ) : null}
-        {/* </div> */}
 
         {showRolinho && numRolinhos > 0 ? (
           <div className="specials-section">
-            <img src={PizzaImg} alt="pizza" className="map-image" />
-
             <ul className="specials-rolinhos">
               {rolinhos.map((rolinho) => (
                 <Rolinho rolinhoObject={rolinho} key={rolinho.name} />
@@ -127,8 +115,6 @@ function specialsMenu() {
 
         {showSalad && numSalads > 0 ? (
           <div className="specials-section">
-            <img src={PizzaImg} alt="pizza" className="map-image" />
-
             <ul className="specials-salads">
               {salads.map((salad) => (
                 <Salad saladObject={salad} key={salad.name} />
@@ -136,7 +122,6 @@ function specialsMenu() {
             </ul>
           </div>
         ) : null}
-        {/* </ul> */}
       </div>
     </div>
   );

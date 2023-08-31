@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import "../../App.css";
-
+import MaritacaLogo from "../../Images/Logos/maritacaLogo.png";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 
@@ -36,58 +36,86 @@ const Footer = () => {
     });
   };
 
+  const handleNunoClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/nuno-cola%C3%A7o-836163174/",
+      "_blank"
+    );
+  };
+
   return (
     <div className="footer-container">
       <div className="footer-main">
-        <h3>Morada</h3>
-        <p onClick={handleAdress} style={{ cursor: "pointer" }}>
-          Rua do Patrocínio 44A
-        </p>
-        <p>1350-230 Lisboa</p>
-        <br />
-        <p>3ª feira a Domingo: 12:00 - 15:00</p>
-        <p>19:00 - 22:30</p>
-        <br />
-        <h3>Contactos</h3>
-        <div className="footer-numbers">
-          <p>
-            <a
-              className="footer-numbers-a"
-              style={{ textDecoration: "none", color: "inherit" }}
-              href={`tel:${phoneNumber}`}
-            >
-              {phoneNumber}
-            </a>
-          </p>
-          <p>
-            <a
-              className="footer-numbers-a"
-              style={{ textDecoration: "none", color: "inherit" }}
-              href={`tel:${storeNumber}`}
-            >
-              {storeNumber}
-            </a>
-          </p>
+        <div className="footer-main-logo">
+          <Link
+            to="/"
+            onClick={handleLinkClick}
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <img src={MaritacaLogo} alt="footer-logo" className="footer-logo" />
+          </Link>
         </div>
-        <br />
-        <h3>Siga-nos</h3>
-        <div className="social-media">
-          <div>
-            <FaInstagram
-              size={25}
-              onClick={handleInstagram}
-              style={{ cursor: "pointer" }}
-            />
+        <div className="footer-address-schedule-contacts-follow">
+          <div className="footer-address-schedule">
+            <div className="footer-main-address">
+              <h3>Morada</h3>
+              <p onClick={handleAdress} style={{ cursor: "pointer" }}>
+                Rua do Patrocínio 44A
+              </p>
+              <p>1350-230 Lisboa</p>
+            </div>
+            <div className="footer-main-schedule">
+              <h3>Horario</h3>
+              <p>3ª feira a Domingo: 12:00 - 15:00</p>
+              <p>19:00 - 22:30</p>
+            </div>
           </div>
-          <div>
-            <FaFacebookF
-              size={25}
-              onClick={handleFacebook}
-              style={{ cursor: "pointer" }}
-            />
+          <div className="footer-contacts-social">
+            <div className="footer-numbers">
+              <h3>Contactos</h3>
+              <p>
+                <a
+                  className="footer-numbers-a"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                  href={`tel:${phoneNumber}`}
+                >
+                  {phoneNumber}
+                </a>
+              </p>
+              <p>
+                <a
+                  className="footer-numbers-a"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                  href={`tel:${storeNumber}`}
+                >
+                  {storeNumber}
+                </a>
+              </p>
+            </div>
+            <div className="social-media">
+              <h3>Siga-nos</h3>
+              <div className="social-media-icons">
+                <div>
+                  <FaInstagram
+                    size={25}
+                    onClick={handleInstagram}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+                <div>
+                  <FaFacebookF
+                    size={25}
+                    onClick={handleFacebook}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <br />
+      </div>
+
+      <div className="footer-privacy">
         <div>
           <h5>
             <Link
@@ -95,20 +123,30 @@ const Footer = () => {
               style={{ textDecoration: "none", color: "inherit" }}
               onClick={handleLinkClick}
             >
-              <>Política de Privacidade |</>{" "}
-            </Link>{" "}
+              <>Política de Privacidade&nbsp; |</>
+            </Link>
+          </h5>
+        </div>
+        <div>
+          <h5>
             <Link
-              to="/termos-condições"
+              to="/termos-condicoes"
               style={{ textDecoration: "none", color: "inherit" }}
               onClick={handleLinkClick}
             >
-              <>Termos e Condições |</>{" "}
-            </Link>{" "}
-            <br />{" "}
+              <>&nbsp; Termos e Condições&nbsp; |</>
+            </Link>
+          </h5>
+        </div>
+        <div>
+          <h5>
             <div onClick={handleComplaints} style={{ cursor: "pointer" }}>
-              Livro de reclamações
+              &nbsp; Livro de reclamações&nbsp; |
             </div>
           </h5>
+        </div>
+        <div className="linkedInNuno" onClick={handleNunoClick}>
+          <h5>&nbsp;Website By: Nuno Colaço</h5>
         </div>
       </div>
     </div>

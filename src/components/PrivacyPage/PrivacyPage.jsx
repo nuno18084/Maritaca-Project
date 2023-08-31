@@ -12,9 +12,8 @@ const PrivacyPage = () => {
 
           <h2>1. Informações Coletadas</h2>
           <p>
-            Nós não coletamos nenhum dado pessoal dos usuários deste website.
-            Você pode navegar em nosso site sem fornecer nenhuma informação
-            pessoal.
+            Nós não recolhemos nenhum dado pessoal dos usuários deste website.
+            Pode navegar no nosso site sem fornecer nenhuma informação pessoal.
           </p>
 
           <h2>2. Uso de Cookies</h2>
@@ -41,10 +40,10 @@ const PrivacyPage = () => {
           <p>
             Se tiver alguma dúvida ou preocupação em relação à nossa Política de
             Privacidade, por favor, entre em contato connosco através do email:
-            gearl@maritaca.pt.
+            quiosquemaritaca@gmail.com.
           </p>
 
-          <p>Última atualização: [data da última atualização]</p>
+          <p>Última atualização: 01/09/2023 - V1</p>
         </div>
       </div>
       <Footer />

@@ -1,26 +1,26 @@
 .specials-btn-container {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 5px;
   margin-bottom: 10%;
 }
 
 .specials-btn {
-  padding: 0.2em.5em;
+  padding: 0.3em.7em;
   border: 0.1em solid #ccc;
   background-color: transparent;
   border-radius: 10px;
-  color: gray;
+  color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .specials-btn-active {
-  padding: 0.2em.5em;
-  border: 0.1em solid rgba(243, 180, 49, 0.9);
+  padding: 0.4em.8em;
+  border: 0.1em solid black;
   background-color: rgba(243, 180, 49, 0.9);
-  color: black;
+  color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -43,37 +43,57 @@
   padding: 0;
 }
 
-.specials-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
+.menu-page {
+  margin-bottom: 7%;
 }
 
-.specials-section {
-  background-position: left;
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-  position: relative;
-  overflow: hidden;
-  height: 500px;
-  width: 100%;
+.menu-page h3 {
+  color: rgba(243, 180, 49, 0.9);
 }
 
-.specials-section img {
-  background-position: left;
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-  transform: translate(35%, -5%);
-  position: relative;
-  opacity: 0.3;
+.menu-page p,
+span {
+  color: white;
 }
 
-.specials-pizzas,
-.specials-rolinhos,
-.specials-salads {
-  transform: translate(0, -125%);
-  padding-top: 0;
+@media only screen and (min-width: 700px) {
+  .specials-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .specials-btn {
+    padding: 0.6em 2.4em;
+    border: 0.1em solid #ccc;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .specials-btn-active {
+    padding: 0.8em 2.6em;
+    border: 0.1em solid black;
+    background-color: rgba(243, 180, 49, 0.9);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .menu-page {
+    padding-left: 0;
+  }
+  .specials-pizzas {
+    width: 60%;
+  }
+
+  .specials-rolinhos {
+    width: 60%;
+  }
+
+  .specials-salads {
+    width: 60%;
+  }
 }

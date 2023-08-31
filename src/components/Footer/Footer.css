@@ -7,14 +7,24 @@ body {
 
 .footer-container {
   width: 100%;
-  background-color: black;
+  background-color: #4b4539;
   color: white;
   line-height: 1.5;
+  padding-top: 5%;
+  background-image: url(../../Images/Backgrounds/FooterBackground.png);
+  background-attachment: fixed !important;
+  background-repeat: repeat;
+  background-size: auto auto;
 }
 
 .footer-main {
   text-align: center;
   padding: 20px;
+}
+
+.footer-logo {
+  width: 25%;
+  margin-bottom: 10%;
 }
 
 .footer-main h3 {
@@ -28,6 +38,10 @@ body {
   font-size: 14px;
   line-height: 1.2;
   margin-bottom: 5px;
+}
+
+.footer-main p:last-of-type {
+  margin-bottom: 25px;
 }
 
 .footer-main h5 {
@@ -47,7 +61,82 @@ body {
 .social-media {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15%;
+}
+
+.footer-privacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column !important;
+}
+
+.footer-privacy h5 {
+  font-size: 9px;
+}
+
+@media only screen and (min-width: 700px) {
+  .footer-main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10%;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    padding-left: 0;
+  }
+  .footer-logo {
+    width: 45%;
+    margin-bottom: 10%;
+  }
+  .footer-privacy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+  }
+  .footer-privacy h5 {
+    font-size: 10px;
+  }
+
+  .footer-address-schedule {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+  }
+  .footer-contacts-social {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: left !important;
+    gap: 10px;
+  }
+  .footer-address-schedule-contacts-follow {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 60%;
+  }
+  .footer-numbers {
+    align-items: flex-start;
+  }
+  .social-media {
+    align-items: flex-start;
+  }
+  .linkedInNuno {
+    cursor: pointer;
+  }
 }

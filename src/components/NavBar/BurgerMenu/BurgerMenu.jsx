@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { debounce } from "lodash";
 import "./BurgerMenu.css";
 import "../../../App.css";
@@ -60,10 +60,7 @@ const BurgerMenu = () => {
 
   return (
     <div className="nav-placeholder">
-      <div
-        className="nav-container"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
-      >
+      <div className="nav-container">
         <div>
           <nav>
             <div className="burger-menu" onClick={updateMenu}>
@@ -74,67 +71,72 @@ const BurgerMenu = () => {
           </nav>
           <div className={menuClass}>
             <div className="nav-ul">
-              <br />
-              <Link
+              <NavLink
                 to="/"
                 onClick={() => {
                   closeMenu();
                   handleLinkClick();
                 }}
                 style={{ textDecoration: "none", color: "inherit" }}
+                activeclassname="active"
               >
                 <h1 className="nav-list">Home</h1>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 onClick={() => {
                   closeMenu();
                   handleLinkClick();
                 }}
                 to="/menu"
                 style={{ textDecoration: "none", color: "inherit" }}
+                activeclassname="active"
               >
                 <h1 className="nav-list">Menu</h1>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 onClick={() => {
                   closeMenu();
                   handleLinkClick();
                 }}
-                to="/promoções"
+                to="/promocoes"
                 style={{ textDecoration: "none", color: "inherit" }}
+                activeclassname="active"
               >
                 <h1 className="nav-list">Promoções</h1>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 onClick={() => {
                   closeMenu();
                   handleLinkClick();
                 }}
                 to="/novidades"
                 style={{ textDecoration: "none", color: "inherit" }}
+                activeclassname="active"
               >
                 <h1 className="nav-list">Novidades</h1>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 onClick={() => {
                   closeMenu();
                   handleLinkClick();
                 }}
                 to="/galeria"
                 style={{ textDecoration: "none", color: "inherit" }}
+                activeclassname="active"
               >
                 <h1 className="nav-list">Galeria</h1>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 onClick={() => {
                   closeMenu();
                   handleLinkClick();
                 }}
                 to="/contactos"
                 style={{ textDecoration: "none", color: "inherit" }}
+                activeclassname="active"
               >
                 <h1 className="nav-list">Contactos</h1>
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>

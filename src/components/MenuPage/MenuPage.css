@@ -2,32 +2,36 @@
 
 body {
   font-family: "Source Code Pro", monospace;
-  overflow-x: hidden !important;
-  position: relative;
-  background-color: white !important;
 }
 
 .menu-page {
   padding-left: 2% !important;
 }
 
-/* .main-menu-page {
-  overflow-x: hidden !important;
-} */
+.main-menu-page {
+  background-image: url(../../Images/Backgrounds/MenuBackground.png);
+  background-repeat: repeat;
+  background-attachment: fixed !important;
+  border: none;
+  outline: none;
+}
 
-.pizza-specialities {
-  padding-top: 5%;
-  padding-bottom: 10% 0;
+.pizza-specialities-h1 {
+  padding-top: 30%;
+  color: #f3b431;
+  margin-bottom: 10%;
 }
 
 .complete-menu-container {
-  background-color: white;
-  padding-top: 5%;
+  background: rgba(75, 69, 57, 0.8), lightgray 50%;
+  padding-bottom: 10%;
   padding: 2%;
 }
 
 .complete-menu-container-h1 {
-  padding-bottom: 5%;
+  padding-top: 15%;
+  color: #f3b431;
+  margin-bottom: 10%;
 }
 
 .fullscreen-image {
@@ -40,194 +44,42 @@ body {
   justify-content: center;
   flex-direction: row;
   gap: 10%;
-  padding-bottom: 15%;
+  padding-bottom: 25%;
 }
 
-/* Optional: You can hide the scrollbar when the image is in fullscreen */
-/* body:-webkit-full-screen {
-  overflow: hidden;
-} */
-/* body:-moz-full-screen {
-  overflow: hidden;
-} */
-/* body:fullscreen {
-  overflow: hidden;
-} */
-
-/* .menu-pic {
-  position: absolute;
-  margin-left: 100%;
-  transform: translate(-30%, 0);
-  filter: brightness();
-  opacity: 0.9;
-  width: 100%;
-  height: 100%;
-} */
-
-/* .menu-pic-section {
-  position: relative;
-} */
-
-/* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.menu-image {
+  width: 40%;
 }
 
-html {
-  font-size: 62.5%;
+@media only screen and (min-width: 700px) {
+  .pizza-specialities-h1 {
+    padding-top: 15%;
+    margin-bottom: 5%;
+  }
+  .complete-menu-container-h1 {
+    padding-top: 5%;
+    margin-bottom: 5%;
+  }
+  .complete-menu-container {
+    padding-bottom: 5%;
+    padding: 0;
+    padding-bottom: 10%;
+  }
+  .images-flex {
+    padding-bottom: 5%;
+  }
+  .main-menu-page {
+    background-image: url(../../Images/Backgrounds/MenuBackgroundBig.png) !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .menu-page {
+    padding-left: 0 !important;
+  }
 }
-
-body {
-  font-family: "Roboto Mono", sans-serif;
-  color: #252525;
-  font-weight: 400;
-  background-color: #f7f2e9;
-  border-bottom: 1.6rem solid #edc84b;
-  min-height: 100vh;
-  padding: 3.2rem;
-  padding-bottom: 6rem;
-} */
-
-/* .container {
-  max-width: 80rem;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4.8rem;
-} */
-
-/* *************** */
-
-/* .header {
-  align-self: stretch;
-} */
-
-/* .header h1 { */
-/* Non-accessible color */
-/* color: #edc84b; */
-/* color: #af8602; */
-
-/* text-transform: uppercase;
-  text-align: center;
-  font-size: 5.2rem;
-  font-weight: 300;
-  letter-spacing: 3px;
-  position: relative;
-  width: 100%;
-  display: block;
-} */
-
-/* .header h1::before,
-.header h1::after {
-  display: block;
-  content: "";
-  height: 3px;
-  width: 4rem;
-  background-color: #edc84b;
-  position: absolute;
-  top: calc(50% - 1px);
-}
-
-.header h1::before {
-  left: 0;
-}
-
-.header h1::after {
-  right: 0;
-} */
-
-/* *************** */
-
-/* .menu-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-} */
-
-/* .pizza-specialities {
-  background-image: url("../../Images/MenuPic.png");
-} */
-
-/*
-.menu-menu h2 {
-  display: inline-block;
-  padding: 1rem 0;
-  border-top: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-.menu-menu > p {
-  font-size: 1.5rem;
-  text-align: center;
-  line-height: 1.6;
-  width: 80%;
-}
-
-.pizzas {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
-}
-
-.pizza {
-  display: flex;
-  gap: 3.2rem;
-}
-
-.pizza img {
-  width: 12rem;
-  aspect-ratio: 1;
-  align-self: start;
-}
-
-.pizza div {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 0.4rem 0;
-}
-
-.pizza h3 {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.pizza p {
-  font-size: 1.4rem;
-  font-weight: 300;
-  font-style: italic;
-  margin-bottom: auto;
-}
-
-.pizza span {
-  display: block;
-  font-size: 1.6rem;
-}
-
-.pizza.sold-out {
-  color: #888;
-}
-
-.pizza.sold-out img {
-  filter: grayscale();
-  opacity: 0.8;
-}
-
-/* *************** */
-
-/*
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
-
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
-*/
