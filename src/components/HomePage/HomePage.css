@@ -68,8 +68,10 @@
   }
 }
 
-/* @media only screen and (min-width: 375px) and (max-width: 450px) {
+@media only screen and (min-width: 375px) and (max-width: 425px) {
   .home-main {
+    background-image: url(../../Images/Backgrounds/HomeBackgroundMedium.png) !important;
+    background-size: cover;
     background-position: center bottom;
   }
-} */
+}
