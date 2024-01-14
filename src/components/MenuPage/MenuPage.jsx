@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 import MenuPicture from "../../Images/Other/Maritaca Menu.png";
 import MenuPicture2 from "../../Images/Other/Maritaca Menu 2.png";
 
-function handleMenuClick1() {
-  window.open("https://ibb.co/PQZ0NG3", "_blank");
-}
+// function handleMenuClick1() {
+//   window.open("https://ibb.co/PQZ0NG3", "_blank");
+// }
 
-function handleMenuClick2() {
-  window.open("https://ibb.co/xfyNr66", "_blank");
-}
+// function handleMenuClick2() {
+//   window.open("https://ibb.co/xfyNr66", "_blank");
+// }
 
 const MenuPage = () => {
   return (
@@ -35,20 +35,22 @@ const MenuPage = () => {
 
         <div className="complete-menu-container pizza-specialities">
           <h1 className="complete-menu-container-h1">Menu Completo</h1>
-          <div className="images-flex">
-            <img
-              src={MenuPicture}
-              alt="menu-image"
-              className="menu-image"
-              onClick={handleMenuClick1}
-            />
-            <img
-              src={MenuPicture2}
-              alt="menu-image"
-              className="menu-image"
-              onClick={handleMenuClick2}
-            />
-          </div>
+          <a href="EMENTA.pdf" download="Maritaca_Menu">
+            <div className="images-flex">
+              <img
+                src={MenuPicture}
+                alt="menu-image"
+                className="menu-image"
+                // onClick={handleMenuClick1}
+              />
+              <img
+                src={MenuPicture2}
+                alt="menu-image"
+                className="menu-image"
+                // onClick={handleMenuClick2}
+              />
+            </div>
+          </a>
         </div>
       </div>
       <Footer />
