@@ -104,12 +104,12 @@ const saladData = [
 ];
 
 const promotionsData = [
-  {
-    name: "Tabuleiro + Rolinho",
-    ingredients: "Na compra de um tabuleiro, oferecemos um rolinho de alho.",
-    price: 6,
-    soldOut: false,
-  },
+  // {
+  //   name: "Tabuleiro + Rolinho",
+  //   ingredients: "Na compra de um tabuleiro, oferecemos um rolinho de alho.",
+  //   price: 6,
+  //   soldOut: false,
+  // },
 ];
 
 const newsData = [
