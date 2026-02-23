@@ -116,13 +116,13 @@ const newsData = [
   {
     name: "Fettuccine de Cogumelos",
     ingredients: "Marron | Creme Fresco | Parmesão",
-    price: 11.5,
+    price: 14.5,
     soldOut: false,
   },
   {
     name: "Tiramisù",
     ingredients: "Café | Palitos La Reine | Cacau em Pó | Ovos",
-    price: 4,
+    price: 4.5,
     soldOut: false,
   },
 ];
